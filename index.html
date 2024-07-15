@@ -9,18 +9,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Playwrite+MX:wght@100..400&display=swap" rel="stylesheet">
     <title>my profile</title>
   </head>
-  <body>
+  <body class="testing blue ">
     <main>
+      <div id="header">
       <header>
         <div>
       <img src ="public/menu.svg" class="header-dropdown" id="header-dropdown">
         </div>
       <div class="logo">mutalibb</div>
       <div class="theme">
-        <img src="public/theme.svg" class="theme"> 
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffffff"><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm40-83q119-15 199.5-104.5T800-480q0-123-80.5-212.5T520-797v634Z" class="theme"/></svg>
       </div>
     </header>
-    <div class="dropdown">
+    <div class="dropdown dark" id="dropdown">
       <span class="close">x</span>
       <div><a href="#" class="about">about</a></div>
       <div><a href="#" class="cv">CV</a></div>
@@ -30,21 +31,20 @@
       <div><a href="#" class="blogs">blogs</a></div>
       <div><a href="#" class="contacts">contacts</a></div>
     </div>
+      
     <div class="themeselect">
       <p>theme</p>
+      <label for="blue">
+        <input type="radio" id="blue" name="theme"  class="themeradio" value="blue" checked >blue
+       </label>
     <label for="dark">
-      <input type="radio" id="dark" name="theme" value="dark">dark
+      <input type="radio" id="dark" name="theme" class="themeradio" value="dark">dark
     </label>
-    <label for="blue">
-     <input type="radio" id="blue" name="theme" value="blue">blue
+    <label for="brown">
+      <input type="radio" id="red" name="theme"  class="themeradio" value="brown">red
     </label>
-    <label for="red">
-      <input type="radio" id="red" name="theme" value="red">red
-    </label>
-   <label for="orange">
-      <input type="radio" id="orange" name="theme" value="orange">orange
-    </labe>
    </div>
+  </div>
       <section>
         <div class="intro" id="intro">my name is Olawuni Temitope Mutalibb, 
           I am a software developer who is passionate about solving problems.

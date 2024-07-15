@@ -1,12 +1,15 @@
 import './style.css';
 const menuButton = document.getElementById('header-dropdown');
 const themeButton = document.querySelector('.theme');
-const dropdown = document.querySelector('.dropdown');
+const dropdown = document.querySelector('#dropdown');
 const close = document.querySelector('.close');
 const themeSelect = document.querySelector('.themeselect');
 const stackRow  = document.getElementById('stack');
 const arrowBack = document.querySelector('.arrowleft');
 const arrowForward = document.querySelector('.arrowright');
+const themeRadio =  document.getElementsByName('theme');
+const header = document.querySelector('header');
+
 
 menuButton.addEventListener("click", () =>{
     dropdown.style.display = "block";
@@ -32,4 +35,19 @@ stackRow.addEventListener("mouseover",() =>{
       arrowBack.style.display ="block"
       arrowForward.style.display ="block"
  }
+})
+
+
+const testing = document.querySelector('.testing');
+
+themeRadio.forEach((element) =>{
+    element.addEventListener(
+        "change", (e) =>{
+            let themeValue;
+            themeValue = e.target.value
+            dropdown.classList = `dropdown ${themeValue}`
+            testing.classList= themeValue;
+            console.log(testing.classList)
+        }
+    )
 })

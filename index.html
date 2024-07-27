@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Playwrite+MX:wght@100..400&display=swap" rel="stylesheet">
     <title>my profile</title>
   </head>
-  <body class="testing blue ">
+  <body class="bodycolor blue">
     <main>
       <div id="header">
       <header>
@@ -21,42 +21,42 @@
         <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffffff"><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm40-83q119-15 199.5-104.5T800-480q0-123-80.5-212.5T520-797v634Z" class="theme"/></svg>
       </div>
     </header>
-    <div class="dropdown dark" id="dropdown">
+    <div class="dropdown" id="dropdown">
       <span class="close">x</span>
-      <div><a href="#" class="about">about</a></div>
+      <div><a href="#about" class="about">about</a></div>
       <div><a href="#" class="cv">CV</a></div>
-      <div><a href="#" class="stack">stack</a></div>
-      <div><a href="#" class="projects">projects</a></div>
-      <div><a href="#" class="games">games</a></div>
-      <div><a href="#" class="blogs">blogs</a></div>
-      <div><a href="#" class="contacts">contacts</a></div>
+      <div><a href="#stack" class="stack">stack</a></div>
+      <div><a href="#projects" class="projects">projects</a></div>
+      <div><a href="#games" class="games">games</a></div>
+      <div><a href="https://dev.to/mutalibb" target="_blank" class="blogs">blogs</a></div>
+      <div><a href="https://github.com/temimutalibb" target="_blank" class="contacts">contacts</a></div>
     </div>
-      
-    <div class="themeselect">
-      <p>theme</p>
-      <label for="blue">
-        <input type="radio" id="blue" name="theme"  class="themeradio" value="blue" checked >blue
-       </label>
-    <label for="dark">
-      <input type="radio" id="dark" name="theme" class="themeradio" value="dark">dark
-    </label>
-    <label for="brown">
-      <input type="radio" id="red" name="theme"  class="themeradio" value="brown">red
-    </label>
-   </div>
+      <div class="themeselect">
+        <p>theme</p>
+        <label for="blue">
+          <input type="radio" id="blue" name="theme"  class="themeradio" value="blue" checked>blue
+         </label>
+      <label for="dark">
+        <input type="radio" id="dark" name="theme" class="themeradio" value="dark">dark
+      </label>
+      <label for="brown">
+        <input type="radio" id="brown" name="theme"  class="themeradio" value="brown">brown
+      </label>
+      </div>
+   
   </div>
       <section>
-        <div class="intro" id="intro">my name is Olawuni Temitope Mutalibb, 
-          I am a software developer who is passionate about solving problems.
-          i code nicely, keeps seo and aria label in mind when developing software,
-           i am available to work in a team and up for hire.
-       
+        <div class="intro" id="about">my name is Olawuni Temitope Mutalibb, 
+          I am a software developer passionate about solving problems
+           and writing clean, accessible code with
+           SEO and ARIA in mind. i am available for
+           team projects and open for hire.
           </div>
       </section>
       <p class="stack-text">my stack</p>
-     <div class ="stack" id="stack">
-
-      <span class="arrowleft">
+    
+    <div class ="stack" id="stack">
+     <span class="arrowleft">
         <img src="/public/arrow_back.svg">
       </span>
       <span class="arrowright">
@@ -111,10 +111,10 @@
         </div>
       </div>
      </div>
-     <p class="stack-text">some of my projects</p>
+     <p class="stack-text" id="projects">some of my projects</p>
      <div class="project-row">
-      <div class="project-column">
-        <a href="#" target="_blank">
+      <div class="project-column" id="games">
+        <a href="https://guessthenumber-omega.vercel.app/" target="_blank">
       <div class="project-card">
         <img src ="public/img/guessnumber.png" alt="guess number">
       </div>
@@ -126,7 +126,7 @@
       </div>
       
       <div class="project-column">
-        <a href="#" target="_blank">
+        <a href="https://kingsclean.vercel.app/" target="_blank">
         <div class="project-card">
           <img src ="public/img/cleaning.jpeg" alt="guess number">
         </div>
@@ -138,7 +138,7 @@
         </div>
 
         <div class="project-column">
-          <a href="#" target="_blank">
+          <a href="https://demostore-nine.vercel.app/" target="_blank">
           <div class="project-card">
             <img src ="public/img/demostore.jpeg" alt="guess number">
           </div>
@@ -150,7 +150,7 @@
           </div>
 
           <div class="project-column">
-            <a href="#" target="_blank">
+            <a href="https://tribute-phkw.vercel.app/" target="_blank">
             <div class="project-card">
               <img src ="public/img/tribute.jpeg" alt="guess number">
             </div>
@@ -161,12 +161,88 @@
             </a>
             </div>
      </div>
+     <p class="stack-text">qualities</p>
+     
+       <div class="stack-row">
+         <div class="stack-round">
+           <div><strong>ATTENTION TO DETAILS</strong>
+            <br><br>
+            <i>Precision in coding to avoid error</i>
+          </div>
+          </div> 
+         <div class="stack-round">
+          <div><strong>CONTINUOUS LEARNING</strong>
+            <br><br>
+            <i>Eager to learn new technologies...</i>
+          </div>
+         </div>
+         <div class="stack-round">
+          <div><strong>CREATIVITY</strong>
+            <br><br>
+            <i>Innovative thinking to come up with  solutions</i>
+          </div>
+         </div>
+         <div class="stack-round">
+          <div><strong>COMMUNI CATION SKILLS</strong>
+            <br><br>
+            <i>My ability to collaborate effectively...</i>
+          </div>
+         </div>
+         <div class="stack-round">
+          <div><strong>TIME MANAGEMENT</strong>
+            <br><br>
+            <i> I efficiently managing time to meet deadlines.</i>
+          </div>
+         </div>
+         <div class="stack-round">
+          <div><strong>ADAPTABILITY</strong>
+            <br><br>
+            <i> I can easily adapt to new tools...</i>
+          </div>
+         </div>
+         <div class="stack-round">
+          <div><strong>TEAMWORK</strong>
+            <br><br>
+            <i>Ability to work well in a team.</i>
+          </div>
+         </div>
+         <div class="stack-round">
+          <div><strong>INTERGRITY</strong>
+            <br><br>
+            <i>I am commited to writing secure, ethical, and maintainable code.</i>
+          </div>
+         </div>
+       </div>
+
+     <div class="fixcontact">
+      <a href ="https://github.com/temimutalibb" target="_blank">
+      <img src ="public/chat.svg">
+    </a>
+     </div>
+
+   <div class="coming-soon-text">
+       <p>coming soon</p>
+       <p>coming soon</p>
+       <p>coming soon</p>
+       <p>coming soon</p> 
+       <p></p>
+       <p></p>
+    </div>
+   <div class="coming-soon">
+    <div class="one">      
+     <img src="/public/img/chatapp.jpeg" alt="reactjs">
+   </div>
+    <div class="two">
+      <div>
+       <img src="/public/img/artmarket.jpeg" alt="reactjs">
+      </div>
+      <div>
+       <img src="/public/img/dapp.jpeg" alt="reactjs">
+      </div>
+    </div>
+    </div>
      <footer>
-      <div>blog</div>
-      <div>contact</div>
-      <div>blog</div>
-      <div>game</div>
-      <div>employ</div>
+      <div>mutalibb &copy; 2024</div>
       </footer>
     </main>
     <script type="module" src="/main.js"></script>

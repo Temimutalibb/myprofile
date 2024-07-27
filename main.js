@@ -8,15 +8,13 @@ const stackRow  = document.getElementById('stack');
 const arrowBack = document.querySelector('.arrowleft');
 const arrowForward = document.querySelector('.arrowright');
 const themeRadio =  document.getElementsByName('theme');
-const header = document.querySelector('header');
-
+const bodyColor = document.querySelector('.bodycolor');
 
 menuButton.addEventListener("click", () =>{
     dropdown.style.display = "block";
     close.addEventListener("click",()=>{
         dropdown.style.display = "none"
     });
-    
 })
 
 themeButton.addEventListener("click",() =>{
@@ -34,20 +32,17 @@ stackRow.addEventListener("mouseover",() =>{
  }else{
       arrowBack.style.display ="block"
       arrowForward.style.display ="block"
- }
+    }
 })
 
-
-const testing = document.querySelector('.testing');
 
 themeRadio.forEach((element) =>{
     element.addEventListener(
         "change", (e) =>{
             let themeValue;
             themeValue = e.target.value
-            dropdown.classList = `dropdown ${themeValue}`
-            testing.classList= themeValue;
-            console.log(testing.classList)
+            //dropdown.classList = `dropdown ${themeValue}`
+            bodyColor.classList= themeValue;
         }
     )
 })

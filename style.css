@@ -518,3 +518,19 @@ cursor: pointer;
     left: -10%
   }
 }
+
+.one, .two > div {
+  position: relative;
+}
+
+.one div, .app{
+  position: absolute;
+  z-index: 2;
+  color: red;
+  bottom: 50%;
+  left: 22px;
+  font-size: 13px;
+  color:white;
+  background-color: #000000;
+  padding: 6px;
+}

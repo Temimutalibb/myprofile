@@ -10,14 +10,16 @@ const arrowForward = document.querySelector('.arrowright');
 const themeRadio =  document.getElementsByName('theme');
 const bodyColor = document.querySelector('.bodycolor');
 
-menuButton.addEventListener("click", () =>{
+menuButton.addEventListener("click", (event) =>{
+    event.stopPropagation()
     dropdown.style.display = "block";
     close.addEventListener("click",()=>{
         dropdown.style.display = "none"
     });
 })
 
-themeButton.addEventListener("click",() =>{
+themeButton.addEventListener("click",(event) =>{
+    event.stopPropagation()
     if(themeSelect.style.display === "block"){
         themeSelect.style.display="none"
     }else{
@@ -45,4 +47,15 @@ themeRadio.forEach((element) =>{
             bodyColor.classList= themeValue;
         }
     )
+})
+
+
+document.addEventListener("click",() =>{
+    if (themeSelect.style.display === 'block'){
+        themeSelect.style.display = 'none';
+    }
+    if (dropdown.style.display === 'block'){
+        dropdown.style.display = 'none';
+    }
+   
 })

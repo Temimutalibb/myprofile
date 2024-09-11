@@ -34,7 +34,7 @@ body {
   background-color:black;
   color: white
 }
-.dark .dropdown{
+.dark .dropdown , .dark .themeselect{
   background-color: #000000;
   color: white;
 }
@@ -52,7 +52,7 @@ body {
   background-color:#f9f9f9;
   color: black; 
  }
-.blue, .blue .dropdown{
+.blue, .blue .dropdown, .blue .themeselect{
   background-color:  whitesmoke;
   color: blue
 }
@@ -78,7 +78,7 @@ body {
  }
 
 
-.brown, .brown .dropdown{
+.brown, .brown .dropdown, .brown .themeselect{
   background-color:  whitesmoke;
   color: brown
 }
@@ -156,16 +156,17 @@ header{
  .themeselect{
   height:auto;
   width: 150px;
-  background-color:white;
-  border: 1px solid orange;
+  box-shadow: 1px 1px 1px 1px;
   margin-top: 20px;
   padding: 10px;
   position: absolute;
   top: 2em;
   right: 0;
-  z-index: 1;
+  z-index: 100;
   animation: theme-animation 1s;
   display: none;
+  opacity: 100;
+  
  }
  input[type="radio"]{
   font-size: 20px;
@@ -346,7 +347,7 @@ a:hover{
   opacity: 0.8;
 }
 a:visited{
-  color:inherit;
+  color:none;
 }
 h1 {
   display: inline-block;
@@ -375,7 +376,7 @@ button:focus-visible {
 .fixcontact{
   position: fixed;
   right: 15px;
-  bottom:10px;
+  bottom:10%;
   z-index: 100;
 }
 

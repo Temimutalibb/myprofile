@@ -2,14 +2,19 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playwrite+MX:wght@100..400&display=swap" rel="stylesheet">
     <title>my profile</title>
   </head>
-  <body class="bodycolor blue">
+  <body class="bodycolor dark">
     <main>
       <div id="header">
       <header>
@@ -21,6 +26,7 @@
         <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffffff"><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm40-83q119-15 199.5-104.5T800-480q0-123-80.5-212.5T520-797v634Z" class="theme"/></svg>
       </div>
     </header>
+     <!--for the side bar-->
     <div class="dropdown" id="dropdown">
       <span class="close">x</span>
       <div><a href="#about" class="about">about</a></div>
@@ -33,12 +39,12 @@
     </div>
       <div class="themeselect">
         <p>theme</p>
+        <label for="dark">
+          <input type="radio" id="dark" name="theme" class="themeradio" value="dark" checked>dark
+        </label>
         <label for="blue">
-          <input type="radio" id="blue" name="theme"  class="themeradio" value="blue" checked>blue
+          <input type="radio" id="blue" name="theme"  class="themeradio" value="blue">blue
          </label>
-      <label for="dark">
-        <input type="radio" id="dark" name="theme" class="themeradio" value="dark">dark
-      </label>
       <label for="brown">
         <input type="radio" id="brown" name="theme"  class="themeradio" value="brown">brown
       </label>
@@ -128,7 +134,7 @@
       <div class="project-column">
         <a href="https://kingsclean.vercel.app/" target="_blank">
         <div class="project-card">
-          <img src ="public/img/cleaning.jpeg" alt="guess number">
+          <img src ="public/img/cleaning.jpeg" alt="cleaning page">
         </div>
         <div class="project-footer">
           <strong>cleaning company landing page</strong><br>
@@ -140,25 +146,37 @@
         <div class="project-column">
           <a href="https://demostore-nine.vercel.app/" target="_blank">
           <div class="project-card">
-            <img src ="public/img/demostore.jpeg" alt="guess number">
+            <img src ="public/img/demostore.jpeg" alt="demo store">
           </div>
           <div class="project-footer">
             <strong>commerce | clothing store</strong><br>
             <span>reactjs</span>
           </div>
           </a>
-          </div>
+        </div>
 
           <div class="project-column">
             <a href="https://tribute-phkw.vercel.app/" target="_blank">
             <div class="project-card">
-              <img src ="public/img/tribute.jpeg" alt="guess number">
+              <img src ="public/img/tribute.jpeg" alt="tribute page">
             </div>
             <div class="project-footer">
               <strong> tribute page</strong><br>
               <span>bootstrap</span>
             </div>
             </a>
+            </div>
+
+            <div class="project-column">
+              <a href="/#">
+              <div class="project-card">
+                <img src ="public/img/myprofile.png" alt="profile page">
+              </div>
+              <div class="project-footer">
+                <strong>my portfolio</strong><br>
+                <span>javaScript</span>
+              </div>
+              </a>
             </div>
      </div>
      <p class="stack-text">qualities</p>

@@ -210,7 +210,7 @@ input[type="radio"]{
   display:none;
   top: 0px;
   animation: dropdown-animation  1s ;
-  z-index: 100;
+  z-index: 2;
   opacity: 1;
   }
  .dropdown > div{
@@ -303,7 +303,7 @@ input[type="radio"]{
   height:auto;
   box-shadow: 0px 0px 10px 0px ;
   padding: 5px;
-  margin-bottom: 15px;
+  margin-bottom: 19px;
 }
 
 .project-column a{
@@ -496,7 +496,7 @@ cursor: pointer;
 
 .one div, .app{
   position: absolute;
-  z-index: 2;
+  z-index: 1;
   color: red;
   bottom: 50%;
   left: 22px;
@@ -504,4 +504,19 @@ cursor: pointer;
   color:white;
   background-color: #000000;
   padding: 6px;
+}
+
+.follow{
+display :flex;
+justify-content: space-around;
+margin-bottom: 20px;
+}
+
+.follow > div{
+  display: inline-block;
+  font-size: 20px;
+  box-shadow: 1px 1px 1px 1px;
+  padding: 4.3px;
+  cursor: pointer;
+  text-shadow: 1px 1px 1px purple;
 }

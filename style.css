@@ -1,4 +1,4 @@
-:root {
+ :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -16,6 +16,7 @@
   --testing-bbgcolor: white;
   --testing-bcolor: white;
 }
+
 
 body {
   margin: 0;
@@ -204,7 +205,7 @@ input[type="radio"]{
   }
  .dropdown{
   height:100vh;
-  width: 50%;
+  width: 30%;
   padding: 10px;
   position: absolute;
   display:none;
@@ -212,16 +213,26 @@ input[type="radio"]{
   animation: dropdown-animation  1s ;
   z-index: 2;
   opacity: 1;
+  box-shadow: 0px 0px 2px 1px ;
   }
  .dropdown > div{
-  margin-bottom: 25px;
-  padding:7px
+  justify-content:baseline;
+  padding:15px;
+  display: flex;
+ }
+ .dropdown img{
+  width: 2rem;
+  height: 1rem;
+  align-self:center;
+  opacity: 0.5;
+  margin-right: 2px;
  }
  .dropdown a{
-  display: inline-block;
+  display: block;
   padding: 8px;
   font-size: 20px;
-  color:inherit
+  color:inherit;
+  align-self: center;
  }
  .close{
   color:red;
@@ -233,6 +244,7 @@ input[type="radio"]{
   padding-top: 0px;
   margin-top: -25px;
   cursor: pointer;
+  display: block;
  }
  .close:hover{
   opacity: 0.5;
@@ -277,8 +289,8 @@ input[type="radio"]{
 .stack-child{
   background-color:white;
   box-shadow: 0px 0px 10px 0px ;
-  width:35%;
-  height: 200px;
+  width:18rem;
+  height: 12rem;
   padding: 5px;
   margin: 10px;
   display: inline-block;
@@ -513,10 +525,107 @@ margin-bottom: 20px;
 }
 
 .follow > div{
-  display: inline-block;
+  display: flex;
   font-size: 20px;
-  box-shadow: 1px 1px 1px 1px;
+  box-shadow: 0px 0px 1px 0px;
   padding: 4.3px;
   cursor: pointer;
   text-shadow: 1px 1px 1px purple;
+  justify-content: space-around;
+}
+.follow img{
+  height:2rem ;
+}
+.rightbar{
+  grid-template-columns: 1fr;
+  width: 30%;
+  margin-left:auto;
+  display: none;
+}
+
+@media only screen and (min-width:1000px) {
+  header img {
+    visibility: hidden;
+   }
+  .dropdown{
+    display:block;
+    width: 18%;
+    text-align: center;
+    margin-top: 5.5%;
+    box-shadow: 0px 0px 1px 0px ;
+  }
+  .close{
+     display: none;
+  }
+  
+  .largescreen{
+    display: flex;
+  }
+ .project-row{
+    display: block;
+    flex-wrap: wrap;
+    align-self: center;
+    align-items: center;
+    width: 66%;
+    height: auto;
+    margin-left:3px;
+  }
+  .project-column{
+    width: 100%;
+    padding: 15px;
+    margin: auto;
+    height:50vh;
+    box-shadow: 0px 0px 2px 1px ;
+    padding: 5px;
+    margin-bottom: 30px;
+    overflow: hidden;
+  }
+  .project-column a{
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  .project-card{
+    height: 80%;
+    overflow: hidden;
+  }
+  .project-card img{
+    height: 100%;
+    overflow: hidden;
+  }
+  .project-footer{
+    height: 19%;
+  }
+
+  .rightbar{
+    grid-template-columns: 1fr;
+    width: 30%;
+    margin-left:auto;
+    display: block;
+  }
+
+  .rightbar > div{
+    width: 90%;
+    box-shadow: 0px 0px 10px 0px ;
+    margin-bottom: 30px;
+    text-align: center;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  .socials{
+    display: flex;
+    justify-content: space-around;
+    padding:1fr
+  }
+  .follow{
+    display: none;
+  }
+  .followme{
+    display:none
+  }
+  main{
+    margin-left: 19%;
+  }
+
 }

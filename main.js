@@ -54,8 +54,18 @@ document.addEventListener("click",() =>{
     if (themeSelect.style.display === 'block'){
         themeSelect.style.display = 'none';
     }
-    if (dropdown.style.display === 'block'){
-        dropdown.style.display = 'none';
-    }
-   
+    
+})
+
+
+//to capture the screen size
+window.addEventListener('resize', () => {
+    const screen = window.innerWidth
+     if(screen >= 1000){
+      dropdown.style.display = 'block'
+     }
+     
+     if(screen < 1000){
+          dropdown.style.display = ''
+     }
 })

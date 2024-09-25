@@ -628,4 +628,10 @@ margin-bottom: 20px;
     margin-left: 19%;
   }
 
+  .coming-soon{
+    display: none;
+   }
+   .coming-soon-text p{
+    display: none;
+  }
 }

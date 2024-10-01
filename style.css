@@ -250,14 +250,13 @@ input[type="radio"]{
   opacity: 0.5;
  }
  .intro{
-  width: 50%;
+  width: 80%;
   margin: auto;
   text-align: center;
-  font-size: 15px;
-  font-weight: 605;
-  margin-top: 150px;
+  font-size: 14px;
+  margin-top: 50px;
   margin-bottom:50px;
-  font-style:italic
+  font-family:Arial, Helvetica, sans-serif;
  }
  
 #stack{
@@ -618,6 +617,12 @@ margin-bottom: 20px;
     justify-content: space-around;
     padding:1fr
   }
+
+  .socials > div:hover{
+    animation-name: socialanime;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+ }
   .follow{
     display: none;
   }
@@ -634,4 +639,41 @@ margin-bottom: 20px;
    .coming-soon-text p{
     display: none;
   }
+
+
+  @keyframes socialanime {
+    0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(5px);
+  }
+
+
+  50%{
+    transform: translateX(0px);
+  }
+  75%{
+    transform: translateX(-5px);
+}
+  
+   100%{
+    transform: translateX(0px);
+}
+   } 
+}
+
+.modal-content,.modal-body,.card {
+  background-color: rgba(0, 0, 0, 0.918);
+  color:white /* Replablce with your desired color */
+}
+.btn-close{
+  color:white;
+  background-color: white;
+}
+.modal-title{
+  color:wheat
+}
+.card-title{
+  color:#888;
 }

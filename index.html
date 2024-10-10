@@ -1,503 +1,730 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playwrite+MX:wght@100..400&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playwrite+MX:wght@100..400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
     <title>mutalibb</title>
   </head>
   <body class="bodycolor dark">
-     <div id="header">
+    <div id="header">
       <header>
         <div>
-      <img src ="public/menu.svg" class="header-dropdown" id="header-dropdown">
+          <img src="/menu.svg" class="header-dropdown" id="header-dropdown" />
         </div>
-      <div class="logo">mutalibb</div>
-      <div class="theme">
-        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffffff"><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm40-83q119-15 199.5-104.5T800-480q0-123-80.5-212.5T520-797v634Z" class="theme"/></svg>
+        <div class="logo">mutalibb</div>
+        <div class="theme">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 -960 960 960"
+            width="24px"
+            fill="#ffffff"
+          >
+            <path
+              d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm40-83q119-15 199.5-104.5T800-480q0-123-80.5-212.5T520-797v634Z"
+              class="theme"
+            />
+          </svg>
+        </div>
+      </header>
+      <!--for the side bar-->
+      <div class="dropdown" id="dropdown">
+        <span class="close" title="close">x</span>
+        <div>
+          <img src="/icons8-about-me-48.png" />
+          <a href="#about" class="about">about</a>
+        </div>
+        <div>
+          <img src="/icons8-cv-80.png" />
+          <a href="#" class="cv">CV</a>
+        </div>
+        <div>
+          <img src="/icons8-stack-40.png" />
+          <a href="#stack" class="stack">stack</a>
+        </div>
+        <div>
+          <img src="/icons8-project-48.png" />
+          <a href="#projects" class="projects">projects</a>
+        </div>
+        <div>
+          <img src="/icons8-games-48.png" />
+          <a href="#games" class="games">games</a>
+        </div>
+        <div>
+          <img src="/icons8-blog-48.png" />
+          <a href="https://dev.to/mutalibb" target="_blank" class="blogs"
+            >blogs</a
+          >
+        </div>
+        <div>
+          <img src="/icons8-contact-40.png" />
+          <a
+            href="https://github.com/temimutalibb"
+            target="_blank"
+            class="contacts"
+            >contacts</a
+          >
+        </div>
       </div>
-    </header>
-     <!--for the side bar-->
-    <div class="dropdown" id="dropdown">
-      <span class="close" title="close">x</span>
-      <div>
-        <img src="public/icons8-about-me-48.png"/>
-        <a href="#about" class="about">about</a>
-      </div>
-      <div>
-        <img src="public/icons8-cv-80.png">
-        <a href="#" class="cv">CV</a>
-      </div>
-      <div>
-        <img src="public/icons8-stack-40.png">
-        <a href="#stack" class="stack">stack</a>
-      </div>
-      <div>
-        <img src="public/icons8-project-48.png">
-        <a href="#projects" class="projects">projects</a>
-      </div>
-      <div>
-        <img src="public/icons8-games-48.png">
-        <a href="#games" class="games">games</a>
-      </div>
-      <div>
-        <img src="public/icons8-blog-48.png">
-        <a href="https://dev.to/mutalibb" target="_blank" class="blogs">blogs</a>
-      </div>
-      <div>
-        <img src="public/icons8-contact-40.png">
-        <a href="https://github.com/temimutalibb" target="_blank" class="contacts">contacts</a>
-      </div>
-    </div>
 
       <div class="themeselect">
         <p>theme</p>
         <label for="dark">
-          <input type="radio" id="dark" name="theme" class="themeradio" value="dark" checked>dark
+          <input
+            type="radio"
+            id="dark"
+            name="theme"
+            class="themeradio"
+            value="dark"
+            checked
+          />dark
         </label>
         <label for="blue">
-          <input type="radio" id="blue" name="theme"  class="themeradio" value="blue">blue
-         </label>
-      <label for="brown">
-        <input type="radio" id="brown" name="theme"  class="themeradio" value="brown">brown
-      </label>
+          <input
+            type="radio"
+            id="blue"
+            name="theme"
+            class="themeradio"
+            value="blue"
+          />blue
+        </label>
+        <label for="brown">
+          <input
+            type="radio"
+            id="brown"
+            name="theme"
+            class="themeradio"
+            value="brown"
+          />brown
+        </label>
       </div>
-  </div>
-  <main>
+    </div>
+    <main>
       <section>
-        <img src ="./header.jpg" height="80rem" width="100%"
-         style="margin-top:7px;"/>
+        <img
+          src="./header.jpg"
+          height="80rem"
+          width="100%"
+          style="margin-top: 7px"
+        />
         <div class="intro" id="about">
-        I’m Olawuni Temitope Mutalibb, a software developer passionate about solving problems and writing clean,
-        accessible code with SEO and ARIA in mind.
-        With a strong foundation in both frontend and backend technologies, 
-        I specialize in creating seamless, user-friendly web applications. 
-        My expertise includes JavaScript, React, Next.js, CSS, Tailwind CSS, Material-UI, and Bootstrap. 
-        On the backend, I work with SQL, NoSQL, PostgreSQL, MySQL, and SQLite databases.
-          </div>
+          I’m Mutalibb, a software developer passionate about solving problems
+          and writing clean, accessible code with SEO and ARIA in mind. With a
+          strong foundation in both frontend and backend technologies, I
+          specialize in creating seamless, user-friendly web applications.
+        </div>
       </section>
       <p class="stack-text">my stack</p>
-    
-    <div class ="stack" id="stack">
-     <span class="arrowleft">
-        <img src="/public/arrow_back.svg">
-      </span>
-      <span class="arrowright">
-        <img src="/public/arrow_forward.svg">
-      </span>
 
-      <div class="stack-row">
-        <div class="stack-child">
-          <img src="/public/img/bootstrap.jpg" alt="boot strap">
-        </div>
-        <div class="stack-child" >
-          <img src="/public/img/css.png" alt="css">
-        </div>
-        <div class="stack-child">
-          <img src="/public/img/expressjs.jpg" alt="expressjs">
-        </div>
-        <div class="stack-child">
-          <img src="/public/img/git.png" alt="git">
-        </div>
-        <div class="stack-child">
-          <img src="/public/img/github.jpg" alt="github">
-        </div>
-        <div class="stack-child">
-          <img src="/public/img/html.png" alt="html">
-        </div>
-        <div class="stack-child">
-          <img src="/public/img/javascript.png" alt="javascript">
-        </div>
-        <div class="stack-child">
-          <img src="/public/img/mui.png" alt="mui">
-        </div>
-        <div class="stack-child">
-          <img src="/public/img/nodejs.png" alt="nodejs">
-        </div>
-        <div class="stack-child">
-          <img src="/public/img/npm.png" alt="npm">
-        </div>
-        <div class="stack-child">
-          <img src="/public/img/php.png" alt="php  ">
-        </div>
-        <div class="stack-child">
-          <img src="/public/img/reactjs.png" alt="reactjs">
-        </div>
-        <div class="stack-child">
-          <img src="/public/img/sass.png" alt="sass">
-        </div>
-        <div class="stack-child">
-          <img src="/public/img/sql.png" alt="sql">
-        </div>
-        <div class="stack-child">
-          <img src="/public/img/vuejs.jpg" alt="vuejs">
+      <div class="stack" id="stack">
+        <span class="arrowleft">
+          <img src="/arrow_back.svg" />
+        </span>
+        <span class="arrowright">
+          <img src="/arrow_forward.svg" />
+        </span>
+
+        <div class="stack-row">
+          <div class="stack-child">
+            <img src="/img/bootstrap.jpg" alt="boot strap" />
+          </div>
+          <div class="stack-child">
+            <img src="/img/css.png" alt="css" />
+          </div>
+          <div class="stack-child">
+            <img src="/img/expressjs.jpg" alt="expressjs" />
+          </div>
+          <div class="stack-child">
+            <img src="/img/git.png" alt="git" />
+          </div>
+          <div class="stack-child">
+            <img src="/img/github.jpg" alt="github" />
+          </div>
+          <div class="stack-child">
+            <img src="/img/html.png" alt="html" />
+          </div>
+          <div class="stack-child">
+            <img src="/img/javascript.png" alt="javascript" />
+          </div>
+          <div class="stack-child">
+            <img src="/img/mui.png" alt="mui" />
+          </div>
+          <div class="stack-child">
+            <img src="/img/nodejs.png" alt="nodejs" />
+          </div>
+          <div class="stack-child">
+            <img src="/img/npm.png" alt="npm" />
+          </div>
+          <div class="stack-child">
+            <img src="/img/php.png" alt="php  " />
+          </div>
+          <div class="stack-child">
+            <img src="/img/reactjs.png" alt="reactjs" />
+          </div>
+          <div class="stack-child">
+            <img src="/img/sass.png" alt="sass" />
+          </div>
+          <div class="stack-child">
+            <img src="/img/sql.png" alt="sql" />
+          </div>
+          <div class="stack-child">
+            <img src="/img/vuejs.jpg" alt="vuejs" />
+          </div>
         </div>
       </div>
-     </div>
-     <p class="stack-text" id="projects">some of my projects</p>
-     
-     <div class="largescreen">
-       <div class="project-row">  
-        
-        <div  class="project-column" data-bs-toggle="modal" data-bs-target="#wiiapp">
-          <div class="project-card">
-            <img src ="public/wiiapp.png" alt="wii app">
-          </div>
-          <div class="project-footer">
-            <span><strong>messaging app</strong></span><br>
-            <span>Nextjs|Tailwind|PostgreSQL|Typescript</span>
-          </div>
-          <!-- Modal -->
-        <div class="modal fade" id="wiiapp" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Wii App</h5>
-                <button type="button" class="btn-close btn-danger" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                <div class="card" style="width:100%;">
-                  <div class="card-body">
-                    <h5 class="card-title">communication</h5>
-                    <p class="card-text">
-                      This is a demo project I developed to showcase my Next.js skills. 
-                      It’s a full-stack messaging app designed for chatting, offering a smooth and user-friendly experience
-                    </p>
+      <p class="stack-text" id="projects">some of my projects</p>
 
-                    <p class="lead ">
-                      Tech Stack: Nextjs,Tailwind,PostgreSQL,Typescript
-                    </p>
-                   <p>  <img src ="public/wiiapp.png" alt="demo store" 
-                    class="card-img-top" alt="demo store" 
-                    alt="cleaning page">
-                  </p>
-                   <p><a href="https://wii-app.vercel.app/" target="_blank" class="btn  btn-secondary">Live Link</a></p>
-                  </div>
-                </div>
-              </div>
-              <div class="modal-footer">
-                <a href="https://wii-app.vercel.app/" target="_blank" class="btn  btn-secondary">Live Link</a>
-                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">x</button>
-              </div>
+      <div class="largescreen">
+        <div class="project-row">
+          <div
+            class="project-column"
+            data-bs-toggle="modal"
+            data-bs-target="#wiiapp"
+          >
+            <div class="project-card">
+              <img src="/wiiapp.png" alt="wii app" />
             </div>
-          </div>
-        </div>
-    </div>
-            
-        <div  class="project-column" data-bs-toggle="modal" data-bs-target="#demostore">
-              <div class="project-card">
-                <img src ="public/img/demostore.jpeg" alt="demo store">
-              </div>
-              <div class="project-footer">
-                <span><strong>clothing line store</strong></span><br>
-                <span>Reactjs</span>
-              </div>
-              <!-- Modal -->
-            <div class="modal fade" id="demostore" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="project-footer">
+              <span><strong>messaging app</strong></span
+              ><br />
+              <span>Nextjs|Tailwind|PostgreSQL|Typescript</span>
+            </div>
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="wiiapp"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div
+                class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+              >
                 <div class="modal-content">
                   <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">DemoStore</h5>
-                    <button type="button" class="btn-close btn-danger" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h5 class="modal-title" id="exampleModalLabel">Wii App</h5>
+                    <button
+                      type="button"
+                      class="btn-close btn-danger"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
                   </div>
                   <div class="modal-body">
-                    <div class="card" style="width:100%;">
+                    <div class="card" style="width: 100%">
                       <div class="card-body">
-                        <h5 class="card-title">e-commerce</h5>
+                        <h5 class="card-title">communication</h5>
                         <p class="card-text">
-                          Developed a clothing store web app. 
-                          I made the UI interactive and provided a
-                           good user experience. Users can view a 
-                           lot of options without having to navigate
-                            through multiple routes. The colors
-                             are well-chosen, complementing the
-                              beautiful clothing and making the 
-                              site vibrant and colorful.
+                          This is a demo project I developed to showcase my
+                          Next.js skills. It’s a full-stack messaging app
+                          designed for chatting, offering a smooth and
+                          user-friendly experience
                         </p>
 
-                        <p class="lead ">
-                          Tech Stack: React, css.
+                        <p class="lead">
+                          Tech Stack: Nextjs, Tailwind, PostgreSQL, Typescript,
+                          vite
                         </p>
-                       <p>  <img src ="public/img/demostore.jpeg" alt="demo store" 
-                        class="card-img-top" alt="demo store" 
-                        alt="cleaning page">
-                      </p>
-                       <p><a href="https://demostore-delta.vercel.app/" target="_blank" class="btn  btn-secondary">Live Link</a></p>
+                        <p>
+                          <img
+                            src="/wiiapp.png"
+                            alt="demo store"
+                            class="card-img-top"
+                            alt="demo store"
+                            alt="cleaning page"
+                          />
+                        </p>
+                        <p>
+                          <a
+                            href="https://wii-app.vercel.app/"
+                            target="_blank"
+                            class="btn btn-secondary"
+                            >Live Link</a
+                          >
+                        </p>
                       </div>
                     </div>
                   </div>
                   <div class="modal-footer">
-                    <a href="https://demostore-delta.vercel.app/" target="_blank" class="btn  btn-secondary">Live Link</a>
-                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">x</button>
-                  
+                    <a
+                      href="https://wii-app.vercel.app/"
+                      target="_blank"
+                      class="btn btn-secondary"
+                      >Live Link</a
+                    >
+                    <button
+                      type="button"
+                      class="btn btn-danger"
+                      data-bs-dismiss="modal"
+                    >
+                      x
+                    </button>
                   </div>
                 </div>
               </div>
             </div>
-        </div>
-
-        <div  class="project-column" data-bs-toggle="modal" data-bs-target="#kingsclean">
-          <div class="project-card">
-            <img src ="public/img/cleaning.jpeg" alt="kings clean">
           </div>
-          <div class="project-footer">
-            <span><strong>cleaning company landing page</strong></span><br>
-            <span>HTML | CSS | javaScript</span>
-          </div>
-          <!-- Modal -->
-        <div class="modal fade" id="kingsclean" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">King's clean</h5>
-                <button type="button" class="btn-close btn-danger" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                <div class="card" style="width:100%;">
-                  <div class="card-body">
-                    <h5 class="card-title">landing page</h5>
-                    <p class="card-text">
-                       The primary goal of this landing page is to clearly communicate our services to visitors as soon as they arrive. 
-                       It ensures a seamless user experience with interactive elements and fast loading times.
-                        The design is straightforward yet comprehensive,
-                         providing all the necessary information efficiently.
-                    </p>
 
-                    <p class="lead ">
-                      Tech Stack: HTML | CSS | javaScript
-                    </p>
-                   <p>  <img src ="public/img/cleaning.jpeg" alt="demo store" 
-                    class="card-img-top" alt="demo store" 
-                    alt="cleaning page">
-                  </p>
-                   <p><a href="https://kingsclean.vercel.app/" target="_blank" class="btn  btn-secondary">Live Link</a></p>
+          <div
+            class="project-column"
+            data-bs-toggle="modal"
+            data-bs-target="#demostore"
+          >
+            <div class="project-card">
+              <img src="/img/demostore.jpeg" alt="demo store" />
+            </div>
+            <div class="project-footer">
+              <span><strong>clothing line store</strong></span
+              ><br />
+              <span>Reactjs</span>
+            </div>
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="demostore"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div
+                class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+              >
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">
+                      DemoStore
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close btn-danger"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="card" style="width: 100%">
+                      <div class="card-body">
+                        <h5 class="card-title">e-commerce</h5>
+                        <p class="card-text">
+                          Developed a clothing store web app. I made the UI
+                          interactive and provided a good user experience. Users
+                          can view a lot of options without having to navigate
+                          through multiple routes. The colors are well-chosen,
+                          complementing the beautiful clothing and making the
+                          site vibrant and colorful.
+                        </p>
+
+                        <p class="lead">Tech Stack: React, css.</p>
+                        <p>
+                          <img
+                            src="/img/demostore.jpeg"
+                            alt="demo store"
+                            class="card-img-top"
+                            alt="demo store"
+                            alt="cleaning page"
+                          />
+                        </p>
+                        <p>
+                          <a
+                            href="https://demostore-delta.vercel.app/"
+                            target="_blank"
+                            class="btn btn-secondary"
+                            >Live Link</a
+                          >
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <a
+                      href="https://demostore-delta.vercel.app/"
+                      target="_blank"
+                      class="btn btn-secondary"
+                      >Live Link</a
+                    >
+                    <button
+                      type="button"
+                      class="btn btn-danger"
+                      data-bs-dismiss="modal"
+                    >
+                      x
+                    </button>
                   </div>
                 </div>
               </div>
-              <div class="modal-footer">
-                <a href="https://kingsclean.vercel.app/" target="_blank" class="btn  btn-secondary">Live Link</a>
-                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">x</button>
-              
+            </div>
+          </div>
+
+          <div
+            class="project-column"
+            data-bs-toggle="modal"
+            data-bs-target="#kingsclean"
+          >
+            <div class="project-card">
+              <img src="/img/cleaning.jpeg" alt="kings clean" />
+            </div>
+            <div class="project-footer">
+              <span><strong>cleaning company landing page</strong></span
+              ><br />
+              <span>HTML | CSS | javaScript</span>
+            </div>
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="kingsclean"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div
+                class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+              >
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">
+                      King's clean
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close btn-danger"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="card" style="width: 100%">
+                      <div class="card-body">
+                        <h5 class="card-title">landing page</h5>
+                        <p class="card-text">
+                          The primary goal of this landing page is to clearly
+                          communicate our services to visitors as soon as they
+                          arrive. It ensures a seamless user experience with
+                          interactive elements and fast loading times. The
+                          design is straightforward yet comprehensive, providing
+                          all the necessary information efficiently.
+                        </p>
+
+                        <p class="lead">Tech Stack: HTML | CSS | javaScript</p>
+                        <p>
+                          <img
+                            src="/img/cleaning.jpeg"
+                            alt="demo store"
+                            class="card-img-top"
+                            alt="demo store"
+                            alt="cleaning page"
+                          />
+                        </p>
+                        <p>
+                          <a
+                            href="https://kingsclean.vercel.app/"
+                            target="_blank"
+                            class="btn btn-secondary"
+                            >Live Link</a
+                          >
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <a
+                      href="https://kingsclean.vercel.app/"
+                      target="_blank"
+                      class="btn btn-secondary"
+                      >Live Link</a
+                    >
+                    <button
+                      type="button"
+                      class="btn btn-danger"
+                      data-bs-dismiss="modal"
+                    >
+                      x
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="project-column"
+            data-bs-toggle="modal"
+            data-bs-target="#portfolio"
+          >
+            <div class="project-card">
+              <img src="/img/myprofile.png" alt="portfolio picture" />
+            </div>
+            <div class="project-footer">
+              <span><strong>my portfolio</strong></span
+              ><br />
+              <span>HTML, CSS, Bootstrap javaScript</span>
+            </div>
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="portfolio"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div
+                class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+              >
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">
+                      Portfolio
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close btn-danger"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="card" style="width: 100%">
+                      <div class="card-body">
+                        <h5 class="card-title">Portfolio</h5>
+                        <p class="card-text">
+                          I developed my personal portfolio using vanilla
+                          JavaScript to have control over every line of code as
+                          much as possible, and styled it perfectly with CSS.
+                        </p>
+
+                        <p class="lead">
+                          Tech Stack: HTML,CSS, Bootstrap, javaScript.
+                        </p>
+                        <p>
+                          <img
+                            src="/img/myprofile.png"
+                            alt="demo store"
+                            class="card-img-top"
+                            alt="demo store"
+                            alt="cleaning page"
+                          />
+                        </p>
+                        <p>
+                          <a href="#" target="_blank" class="btn btn-secondary"
+                            >Live Link</a
+                          >
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <a href="/#" target="_blank" class="btn btn-secondary"
+                      >Live Link</a
+                    >
+                    <button
+                      type="button"
+                      class="btn btn-danger"
+                      data-bs-dismiss="modal"
+                    >
+                      x
+                    </button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-    </div>
 
-
-        <div  class="project-column" data-bs-toggle="modal" data-bs-target="#portfolio">
-          <div class="project-card">
-            <img src = "public/img/myprofile.png" alt="portfolio picture">
+        <div class="rightbar">
+          <div>
+            <h4>vision</h4>
+            My vision is to continuously build amazing applications that are
+            useful to everyone.
           </div>
-          <div class="project-footer">
-            <span><strong>my portfolio</strong></span><br>
-            <span>HTML, CSS, Bootstrap javaScript</span>
-          </div>
-          <!-- Modal -->
-        <div class="modal fade" id="portfolio" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Portfolio</h5>
-                <button type="button" class="btn-close btn-danger" data-bs-dismiss="modal" aria-label="Close"></button>
+          <div>
+            <h1>follow me on my socials</h1>
+            <div class="socials">
+              <div title="twitter">
+                <a href="https://x.com/mutalibb" target="_blank">
+                  <img src="/icons8-twitter.svg" />
+                </a>
               </div>
-              <div class="modal-body">
-                <div class="card" style="width:100%;">
-                  <div class="card-body">
-                    <h5 class="card-title">Portfolio</h5>
-                    <p class="card-text">
-                      I developed my personal 
-                      portfolio using vanilla 
-                      JavaScript to have control 
-                      over every line of code as much as
-                       possible, and styled it perfectly
-                        with CSS.
-                    </p>
-
-                    <p class="lead ">
-                      Tech Stack: HTML,CSS, Bootstrap, javaScript.
-                    </p>
-                   <p>  <img src ="public/img/myprofile.png" alt="demo store" 
-                    class="card-img-top" alt="demo store" 
-                    alt="cleaning page">
-                  </p>
-                   <p><a href="#" target="_blank" class="btn  btn-secondary">Live Link</a></p>
-                  </div>
-                </div>
+              <div title="github">
+                <a href="https://github.com/temimutalibb" target="_blank">
+                  <img src="/icons8-github.svg" />
+                </a>
               </div>
-              <div class="modal-footer">
-                <a href="/#" target="_blank" class="btn  btn-secondary">Live Link</a>
-                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">x</button>
-              
+              <div title="dev">
+                <a href="https://dev.to/mutalibb" target="_blank">
+                  <img src="/icons8-dev-community.svg" />
+                </a>
+              </div>
+              <div title="upwork">
+                <a
+                  href="https://www.upwork.com/freelancers/~015629b1f9a993511c"
+                  target="_blank"
+                >
+                  <img
+                    src="/icons8-upwork-a-global-freelancing-platform-where-professionals-connect-and-collaborate-remotely-24.png"
+                  />
+                </a>
               </div>
             </div>
+            <i
+              ><a target="_blank" href="https://icons8.com/icon/"></a> icon by
+              <a target="_blank" href="https://icons8.com">Icons8</a></i
+            >
+          </div>
+          <div>
+            <h4>
+              I'm commited to keep building amzing apps, support me, buy me a
+              coffee
+            </h4>
+          </div>
+          <div>
+            <h4>
+              support me by following and interracting on my soicial accout
+            </h4>
+          </div>
+          <div>
+            <h4>coming soon</h4>
+            <h5>chat app</h5>
+            <img
+              src="/img/chatapp.jpeg"
+              style="object-fit: cover; height: 10rem"
+              alt="chatApp"
+            />
+            <h5>art market</h5>
+            <img
+              src="/img/dapp.jpeg"
+              style="object-fit: cover; height: 10rem"
+              alt="dapp"
+            />
           </div>
         </div>
-    </div>
-
-    
-     </div>
-     
-     <div class ="rightbar">
-      <div>
-        <h4>vision</h4>
-        My vision is to continuously 
-        build amazing applications that 
-        are useful to everyone.
       </div>
-      <div>
-       <h1>follow me on my socials</h1>
-       <div class="socials">
+      <p class="stack-text">qualities</p>
+
+      <div class="stack-row">
+        <div class="stack-round">
+          <div>
+            <strong>ATTENTION TO DETAILS</strong> <br /><br />
+            <i>Precision in coding to avoid error</i>
+          </div>
+        </div>
+        <div class="stack-round">
+          <div>
+            <strong>CONTINUOUS LEARNING</strong> <br /><br />
+            <i>Eager to learn new technologies...</i>
+          </div>
+        </div>
+        <div class="stack-round">
+          <div>
+            <strong>CREATIVITY</strong> <br /><br />
+            <i>Innovative thinking to come up with solutions</i>
+          </div>
+        </div>
+        <div class="stack-round">
+          <div>
+            <strong>COMMUNI CATION SKILLS</strong> <br /><br />
+            <i>My ability to collaborate effectively...</i>
+          </div>
+        </div>
+        <div class="stack-round">
+          <div>
+            <strong>TIME MANAGEMENT</strong> <br /><br />
+            <i> I efficiently managing time to meet deadlines.</i>
+          </div>
+        </div>
+        <div class="stack-round">
+          <div>
+            <strong>ADAPTABILITY</strong> <br /><br />
+            <i> I can easily adapt to new tools...</i>
+          </div>
+        </div>
+        <div class="stack-round">
+          <div>
+            <strong>TEAMWORK</strong> <br /><br />
+            <i>Ability to work well in a team.</i>
+          </div>
+        </div>
+        <div class="stack-round">
+          <div>
+            <strong>INTERGRITY</strong> <br /><br />
+            <i
+              >I am commited to writing secure, ethical, and maintainable
+              code.</i
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="fixcontact">
+        <a href="https://github.com/temimutalibb" target="_blank">
+          <img src="public/chat.svg" />
+        </a>
+      </div>
+
+      <div class="coming-soon-text followme">
+        <p class="followme">follow me</p>
+      </div>
+
+      <div class="follow">
         <div title="twitter">
-         <a href ="https://x.com/mutalibb" target="_blank">
-            <img src ="public/icons8-twitter.svg"/>
+          <a href="https://x.com/mutalibb">
+            <img src="/icons8-twitter.svg" />
           </a>
         </div>
         <div title="github">
-          <a href ="https://github.com/temimutalibb" target="_blank">
-             <img src ="public/icons8-github.svg"/>
-           </a>
-         </div>
-         <div title="dev">
-          <a href ="https://dev.to/mutalibb"  target="_blank">
-             <img src ="public/icons8-dev-community.svg"/>
-           </a>
-         </div>
-         <div title="upwork">
-          <a href ="https://www.upwork.com/freelancers/~015629b1f9a993511c"  target="_blank">
-             <img src ="public/icons8-upwork-a-global-freelancing-platform-where-professionals-connect-and-collaborate-remotely-24.png"/>
-           </a>
-         </div>
+          <a href="https://github.com/Temimutalibb">
+            <img src="public/icons8-github.svg" />
+          </a>
         </div>
-        <i><a target="_blank" href="https://icons8.com/icon/"></a> icon by <a target="_blank" href="https://icons8.com">Icons8</a></i>
-      </div>
-      <div>
-        <h4>I'm commited to keep building amzing apps,
-        support me, buy me a coffee
-        </h4>
-      </div>
-      <div>
-        <h4>support me by following and 
-          interracting on my soicial accout
-          </h4>
-      </div>
-      <div>
-        <h4>coming soon</h4>
-        <h5>chat app</h5>
-        <img src="/public/img/chatapp.jpeg"
-        style="object-fit: cover; height: 10rem;" alt="chatApp">
-        <h5>art market</h5>
-        <img src="/public/img/dapp.jpeg"
-        style="object-fit: cover; height: 10rem;" alt="dapp">
-      </div>
-     </div>
-   </div>
-     <p class="stack-text">qualities</p>
-     
-       <div class="stack-row">
-         <div class="stack-round">
-           <div><strong>ATTENTION TO DETAILS</strong>
-            <br><br>
-            <i>Precision in coding to avoid error</i>
-          </div>
-          </div> 
-         <div class="stack-round">
-          <div><strong>CONTINUOUS LEARNING</strong>
-            <br><br>
-            <i>Eager to learn new technologies...</i>
-          </div>
-         </div>
-         <div class="stack-round">
-          <div><strong>CREATIVITY</strong>
-            <br><br>
-            <i>Innovative thinking to come up with  solutions</i>
-          </div>
-         </div>
-         <div class="stack-round">
-          <div><strong>COMMUNI CATION SKILLS</strong>
-            <br><br>
-            <i>My ability to collaborate effectively...</i>
-          </div>
-         </div>
-         <div class="stack-round">
-          <div><strong>TIME MANAGEMENT</strong>
-            <br><br>
-            <i> I efficiently managing time to meet deadlines.</i>
-          </div>
-         </div>
-         <div class="stack-round">
-          <div><strong>ADAPTABILITY</strong>
-            <br><br>
-            <i> I can easily adapt to new tools...</i>
-          </div>
-         </div>
-         <div class="stack-round">
-          <div><strong>TEAMWORK</strong>
-            <br><br>
-            <i>Ability to work well in a team.</i>
-          </div>
-         </div>
-         <div class="stack-round">
-          <div><strong>INTERGRITY</strong>
-            <br><br>
-            <i>I am commited to writing secure, ethical, and maintainable code.</i>
-          </div>
-         </div>
-       </div>
-
-     <div class="fixcontact">
-      <a href ="https://github.com/temimutalibb" target="_blank">
-      <img src ="public/chat.svg">
-    </a>
-     </div>
-
-    <div class="coming-soon-text followme">
-      <p class="followme">follow me</p>
-   </div>
-
-    <div class="follow">
-      <div title="twitter">
-        <a href ="https://x.com/mutalibb">
-        <img src ="public/icons8-twitter.svg"/>
-      </a>
-    </div>
-      <div title="github">
-        <a href ="https://github.com/Temimutalibb">
-          <img src ="public/icons8-github.svg"/>
-        </a>
-      </div>
-      <div title ="hive" >
-        <a href ="https://inleo.io/profile/mutalibb">
-          <img src ="public/hive.jpg">
-        </a>
-      </div>
-      <div title="dev">
-        <a href ="https://dev.to/mutalibb">
-          <img src ="public/icons8-dev-community.svg"/>
-      </a>
-    </div>
-      <div title="upwork">
-        <a href ="https://www.upwork.com/freelancers/~015629b1f9a993511c">
-          <img src ="public/icons8-upwork-a-global-freelancing-platform-where-professionals-connect-and-collaborate-remotely-24.png"/>
-        </a>
+        <div title="hive">
+          <a href="https://inleo.io/profile/mutalibb">
+            <img src="/hive.jpg" />
+          </a>
         </div>
-    </div>
+        <div title="dev">
+          <a href="https://dev.to/mutalibb">
+            <img src="public/icons8-dev-community.svg" />
+          </a>
+        </div>
+        <div title="upwork">
+          <a href="https://www.upwork.com/freelancers/~015629b1f9a993511c">
+            <img
+              src="/icons8-upwork-a-global-freelancing-platform-where-professionals-connect-and-collaborate-remotely-24.png"
+            />
+          </a>
+        </div>
+      </div>
 
-     <footer>
-      <div>mutalibb &copy; 2024</div>
+      <footer>
+        <div>mutalibb &copy; 2024</div>
       </footer>
     </main>
     <script type="module" src="/main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

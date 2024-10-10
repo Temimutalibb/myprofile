@@ -336,7 +336,7 @@ input[type="radio"] {
   color: #646cff;
   transform: scale(1.5);
   background-color: white;
-  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 a {

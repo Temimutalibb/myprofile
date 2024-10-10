@@ -336,15 +336,9 @@ input[type="radio"] {
   color: #646cff;
   transform: scale(1.5);
   background-color: white;
-  overflow: hidden;
-  text-wrap: wrap;
+  overflow-wrap: break-word;
 }
-.project-footer span::after {
-  content: ">>>";
-}
-.project-footer span::before {
-  content: "<<<";
-}
+
 a {
   text-decoration: none;
 }

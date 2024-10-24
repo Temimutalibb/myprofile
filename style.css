@@ -307,6 +307,7 @@ input[type="radio"] {
   box-shadow: 0px 0px 10px 0px;
   padding: 5px;
   margin-bottom: 19px;
+  border-radius: 15px 5px 5px 5px;
 }
 
 .project-column a {

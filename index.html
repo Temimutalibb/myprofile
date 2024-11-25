@@ -2,13 +2,15 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="a hard-working, deligent,software develper"
+    />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="manifest" href="/site.webmanifest" />
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -21,14 +23,16 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <title>mutalibb</title>
+    <title>mutalibb | software-engineer | web-developer</title>
   </head>
   <body class="bodycolor dark">
+
+    <!--head bar-->
     <div id="header">
       <header>
         <div>
           <img
-            src="/menu.svg"
+            src="leftbarimg/menu.svg"
             class="header-dropdown"
             id="header-dropdown"
             alt="dropdown icon"
@@ -50,15 +54,16 @@
           </svg>
         </div>
       </header>
-      <!--for the side bar-->
+
+     <!--for the left bar dropdown-->
       <div class="dropdown" id="dropdown">
         <span class="close" title="close">x</span>
         <div>
-          <img src="/icons8-about-me-48.png" alt="about me icon" />
+          <img src="/leftbarimg/icons8-about-me-48.png" alt="about me icon" />
           <a href="#about" class="about">about</a>
         </div>
         <div>
-          <img src="/icons8-cv-80.png" alt="cv icon" />
+          <img src="/leftbarimg/icons8-cv-80.png" alt="cv icon" />
           <a
             href="https://drive.google.com/file/d/1YIc-1L8O2DQjIYnCe7roLEbCf7WVPLY1/view?usp=sharing"
             class="cv"
@@ -66,26 +71,25 @@
           >
         </div>
         <div>
-          =
-          <img src="/icons8-stack-40.png" alt="stack icon" />
+          <img src="/leftbarimg/icons8-stack-40.png" alt="stack icon" />
           <a href="#stack" class="stack">stack</a>
         </div>
         <div>
-          <img src="/icons8-project-48.png" alt="project icon" />
+          <img src="/leftbarimg/icons8-project-48.png" alt="project icon" />
           <a href="#projects" class="projects">projects</a>
         </div>
         <div>
-          <img src="/icons8-games-48.png" alt="game icon" />
+          <img src="/leftbarimg/icons8-games-48.png" alt="game icon" />
           <a href="#games" class="games">games</a>
         </div>
         <div>
-          <img src="/icons8-blog-48.png" alt="blog icon" />
+          <img src="/leftbarimg/icons8-blog-48.png" alt="blog icon" />
           <a href="https://dev.to/mutalibb" target="_blank" class="blogs"
             >blogs</a
           >
         </div>
         <div>
-          <img src="/icons8-contact-40.png" alt="github icon" />
+          <img src="/leftbarimg/icons8-contact-40.png" alt="github icon" />
           <a
             href="https://github.com/temimutalibb"
             target="_blank"
@@ -95,6 +99,7 @@
         </div>
       </div>
 
+      <!--for theme selsction-->
       <div class="themeselect">
         <p>theme</p>
         <label for="dark">
@@ -114,7 +119,7 @@
             name="theme"
             class="themeradio"
             value="blue"
-          />blue
+          />light
         </label>
         <label for="brown">
           <input
@@ -127,534 +132,188 @@
         </label>
       </div>
     </div>
+    <!--head bar stop here-->
+    
     <main>
-      <section>
-        <img
-          src="./header.jpg"
-          height="80rem"
-          width="100%"
-          style="margin-top: 7px"
-          alt="welcome art image"
-        />
-        <div class="intro" id="about">
-          I’m Mutalibb, a software developer passionate about solving problems
-          and writing clean, accessible code with SEO and ARIA in mind. With a
-          strong foundation in both frontend and backend technologies, I
-          specialize in creating seamless, user-friendly web applications.
-        </div>
-      </section>
-      <p class="stack-text">my stack</p>
-
-      <div class="stack" id="stack">
-        <span class="arrowleft">
-          <img src="/arrow_back.svg" alt="left arrow icon" />
-        </span>
-        <span class="arrowright">
-          <img src="/arrow_forward.svg" alt="right arrow icon" />
-        </span>
-
-        <div class="stack-row">
-          <div class="stack-child">
-            <img src="/img/bootstrap.jpg" alt="boot strap" />
-          </div>
-          <div class="stack-child">
-            <img src="/img/css.png" alt="css" />
-          </div>
-          <div class="stack-child">
-            <img src="/img/expressjs.jpg" alt="expressjs" />
-          </div>
-          <div class="stack-child">
-            <img src="/img/git.png" alt="git" />
-          </div>
-          <div class="stack-child">
-            <img src="/img/github.jpg" alt="github" />
-          </div>
-          <div class="stack-child">
-            <img src="/img/html.png" alt="html" />
-          </div>
-          <div class="stack-child">
-            <img src="/img/javascript.png" alt="javascript" />
-          </div>
-          <div class="stack-child">
-            <img src="/img/mui.png" alt="mui" />
-          </div>
-          <div class="stack-child">
-            <img src="/img/nodejs.png" alt="nodejs" />
-          </div>
-          <div class="stack-child">
-            <img src="/img/npm.png" alt="npm" />
-          </div>
-          <div class="stack-child">
-            <img src="/img/php.png" alt="php  " />
-          </div>
-          <div class="stack-child">
-            <img src="/img/reactjs.png" alt="reactjs" />
-          </div>
-          <div class="stack-child">
-            <img src="/img/sass.png" alt="sass" />
-          </div>
-          <div class="stack-child">
-            <img src="/img/sql.png" alt="sql" />
-          </div>
-          <div class="stack-child">
-            <img src="/img/vuejs.jpg" alt="vuejs" />
-          </div>
-        </div>
+      <img
+      src="./bitmoji.jpg"
+      style="margin-top: 7px; 
+      border-radius: 50%; width:10rem;
+      height:10rem;margin:auto;display: block;margin-top: 22px;"
+      alt="welcome art image"
+    />
+      
+      <div class="intro" id="about">
+        I’m Mutalibb, a software developer passionate about solving problems and
+        writing clean, accessible code with SEO and ARIA in mind. With a strong
+        foundation in both frontend and backend technologies, I specialize in
+        creating seamless, user-friendly web applications.
       </div>
+
       <p class="stack-text" id="projects">some of my projects</p>
 
       <div class="largescreen">
-        <div class="project-row">
-          <div
-            class="project-column"
-            data-bs-toggle="modal"
-            data-bs-target="#rokonote"
-          >
-            <div class="project-card">
-              <img src="/rokonote.png" alt="roko note" />
-            </div>
-            <div class="project-footer">
-              <span><strong>Note app</strong></span
-              ><br />
-              <span>MongoDb|expressjs|React|nodejs|mui|Redux</span>
-            </div>
-            <!-- Modal -->
+
+        <!--for projects-->
+        <div class="project-row" id="project-row">
+          <div class="options">
             <div
-              class="modal fade"
-              id="rokonote"
-              tabindex="-1"
-              aria-labelledby="exampleModalLabel"
-              aria-hidden="true"
+              class="option active"
+              style="--optionBackground: url('/img/demostore.jpeg')"
             >
-              <div
-                class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
-              >
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">
-                      Roko Note
-                    </h5>
-                    <button
-                      type="button"
-                      class="btn-close btn-danger"
-                      data-bs-dismiss="modal"
-                      aria-label="Close"
-                    ></button>
-                  </div>
-                  <div class="modal-body">
-                    <div class="card" style="width: 100%">
-                      <div class="card-body">
-                        <h5 class="card-title">utility</h5>
-                        <p class="card-text">
-                          It's Designed to be both handy and user-friendly, it’s
-                          perfect for capturing and organizing your thoughts on
-                          the go.<br />
-
-                          <b>Ease of Use:</b> Streamlined design for quick
-                          note-taking.<br />
-
-                          <b>Share Button:</b> Easily share your notes with a
-                          single click.<br />
-
-                          <b>Integration:</b> Selected sites that reward you for
-                          posting and interacting with content.<br />
-                        </p>
-
-                        <p class="lead">
-                          Tech Stack: MongoDb, expressjs, React, nodejs, mui,
-                          Redux.
-                        </p>
-                        <p>
-                          <img
-                            src="/rokonote.png"
-                            alt="roko note"
-                            class="card-img-top"
-                          />
-                        </p>
-                        <p>
-                          <a
-                            href="https://roko-note.vercel.app/"
-                            target="_blank"
-                            class="btn btn-secondary"
-                            >Live Link</a
-                          >
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="modal-footer">
-                    <a
-                      href="https://roko-note.vercel.app/"
-                      target="_blank"
-                      class="btn btn-secondary"
-                      >Live Link</a
-                    >
-                    <button
-                      type="button"
-                      class="btn btn-danger"
-                      data-bs-dismiss="modal"
-                    >
-                      x
-                    </button>
-                  </div>
+              <div class="shadow"></div>
+              <div class="label">
+                <div class="icon">
+                  <i class="fas fa-walking"></i>
+                </div>
+                <div class="info">
+                  <div class="main">clothing line store</div>
+                  <button id="demostorebtn" class="sub">view live</button>
+                </div>
+              </div>
+            </div>
+            <div
+              class="option"
+              style="--optionBackground: url('/img/rokonote.png')"
+            >
+              <div class="shadow"></div>
+              <div class="label">
+                <div class="icon">
+                  <i class="fas fa-snowflake"></i>
+                </div>
+                <div class="info">
+                  <div class="main">Note taking app</div>
+                  <button id="rokonotebtn" class="sub">view live</button>
+                </div>
+              </div>
+            </div>
+            <div
+              class="option"
+              style="--optionBackground: url(/img/wiiapp.png)"
+            >
+              <div class="shadow"></div>
+              <div class="label">
+                <div class="icon">
+                  <i class="fas fa-tree"></i>
+                </div>
+                <div class="info">
+                  <div class="main">Messaging app</div>
+                  <button id="wiibtn" class="sub">view live</button>
+                </div>
+              </div>
+            </div>
+            <div
+              class="option"
+              style="--optionBackground: url('/img/cleaning.jpeg')"
+            >
+              <div class="shadow"></div>
+              <div class="label">
+                <div class="icon">
+                  <i class="fas fa-tint"></i>
+                </div>
+                <div class="info">
+                  <div class="main">company landing page</div>
+                  <button  id="kingsbtn" class="sub">view live</button>
+                </div>
+              </div>
+            </div>
+            <div
+              class="option"
+              style="--optionBackground: url('/img/myprofile.png')"
+            >
+              <div class="shadow"></div>
+              <div class="label">
+                <div class="icon">
+                  <i class="fas fa-sun"></i>
+                </div>
+                <div class="info">
+                  <div class="main">my portfolio</div>
+                  <button id="profilebtn" class="sub">view live</button>
                 </div>
               </div>
             </div>
           </div>
-
-          <div
-            class="project-column"
-            data-bs-toggle="modal"
-            data-bs-target="#wiiapp"
-          >
-            <div class="project-card">
-              <img src="/wiiapp.png" alt="wii app" />
-            </div>
-            <div class="project-footer">
-              <span><strong>messaging app</strong></span
-              ><br />
-              <span>Nextjs|Tailwind|PostgreSQL|Typescript</span>
-            </div>
-            <!-- Modal -->
-            <div
-              class="modal fade"
-              id="wiiapp"
-              tabindex="-1"
-              aria-labelledby="exampleModalLabel"
-              aria-hidden="true"
-            >
-              <div
-                class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
-              >
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Wii App</h5>
-                    <button
-                      type="button"
-                      class="btn-close btn-danger"
-                      data-bs-dismiss="modal"
-                      aria-label="Close"
-                    ></button>
-                  </div>
-                  <div class="modal-body">
-                    <div class="card" style="width: 100%">
-                      <div class="card-body">
-                        <h5 class="card-title">communication</h5>
-                        <p class="card-text">
-                          This is a demo project I developed to showcase my
-                          Next.js skills. It’s a full-stack messaging app
-                          designed for chatting, offering a smooth and
-                          user-friendly experience
-                        </p>
-
-                        <p class="lead">
-                          Tech Stack: Nextjs, Tailwind, PostgreSQL, Typescript,
-                          vite
-                        </p>
-                        <p>
-                          <img
-                            src="/wiiapp.png"
-                            alt="demo store"
-                            class="card-img-top"
-                            alt="demo store"
-                            alt="cleaning page"
-                          />
-                        </p>
-                        <p>
-                          <a
-                            href="https://wii-app.vercel.app/"
-                            target="_blank"
-                            class="btn btn-secondary"
-                            >Live Link</a
-                          >
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="modal-footer">
-                    <a
-                      href="https://wii-app.vercel.app/"
-                      target="_blank"
-                      class="btn btn-secondary"
-                      >Live Link</a
-                    >
-                    <button
-                      type="button"
-                      class="btn btn-danger"
-                      data-bs-dismiss="modal"
-                    >
-                      x
-                    </button>
-                  </div>
+           
+          <!--for tools -->
+          <p class="stack-text">tools</p>
+          <div class="tools">
+            <div class="cards">
+              <div class="card card_card">
+                <div class="card_heading">
+                  Frontend
                 </div>
+                <ul>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>javaScript</li>
+                  <li>TypeScript</li>
+                  <li>React</li>
+                  <li>Vue</li>
+                  <li>Tailwind CSS</li>
+                  <li>Bootstrap</li>
+                   <li>Sass</li>
+                  <li>MUi</li>
+                </ul>
+                <button>see more</button>
+                <div class="pointer"></div>
+                <div class="border-top"></div> 
+                <div class="border-bottom"></div>
               </div>
-            </div>
-          </div>
-
-          <div
-            class="project-column"
-            data-bs-toggle="modal"
-            data-bs-target="#demostore"
-          >
-            <div class="project-card">
-              <img src="/img/demostore.jpeg" alt="demo store" />
-            </div>
-            <div class="project-footer">
-              <span><strong>clothing line store</strong></span
-              ><br />
-              <span>Reactjs</span>
-            </div>
-            <!-- Modal -->
-            <div
-              class="modal fade"
-              id="demostore"
-              tabindex="-1"
-              aria-labelledby="exampleModalLabel"
-              aria-hidden="true"
-            >
-              <div
-                class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
-              >
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">
-                      DemoStore
-                    </h5>
-                    <button
-                      type="button"
-                      class="btn-close btn-danger"
-                      data-bs-dismiss="modal"
-                      aria-label="Close"
-                    ></button>
-                  </div>
-                  <div class="modal-body">
-                    <div class="card" style="width: 100%">
-                      <div class="card-body">
-                        <h5 class="card-title">e-commerce</h5>
-                        <p class="card-text">
-                          Developed a clothing store web app. I made the UI
-                          interactive and provided a good user experience. Users
-                          can view a lot of options without having to navigate
-                          through multiple routes. The colors are well-chosen,
-                          complementing the beautiful clothing and making the
-                          site vibrant and colorful.
-                        </p>
-
-                        <p class="lead">Tech Stack: React, css.</p>
-                        <p>
-                          <img
-                            src="/img/demostore.jpeg"
-                            alt="demo store"
-                            class="card-img-top"
-                            alt="demo store"
-                            alt="cleaning page"
-                          />
-                        </p>
-                        <p>
-                          <a
-                            href="https://demostore-delta.vercel.app/"
-                            target="_blank"
-                            class="btn btn-secondary"
-                            >Live Link</a
-                          >
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="modal-footer">
-                    <a
-                      href="https://demostore-delta.vercel.app/"
-                      target="_blank"
-                      class="btn btn-secondary"
-                      >Live Link</a
-                    >
-                    <button
-                      type="button"
-                      class="btn btn-danger"
-                      data-bs-dismiss="modal"
-                    >
-                      x
-                    </button>
-                  </div>
+              <div class="card card_card">
+                <div class="card_heading">
+                  Backend
                 </div>
+                <ul>
+                  <li>Node.js</li>
+                  <li>Express</li>
+                  <li>PHP</li>
+                  <li>Laravel</li>
+                  <li>MongoDB</li>
+                  <li>postgresSQL</li>
+                </ul>
+                <button>see more</button>
+                <div class="pointer"></div>
+                <div class="border-top"></div> 
+                <div class="border-bottom"></div>
               </div>
-            </div>
-          </div>
-
-          <div
-            class="project-column"
-            data-bs-toggle="modal"
-            data-bs-target="#kingsclean"
-          >
-            <div class="project-card">
-              <img src="/img/cleaning.jpeg" alt="kings clean" />
-            </div>
-            <div class="project-footer">
-              <span><strong>cleaning company landing page</strong></span
-              ><br />
-              <span>HTML | CSS | javaScript</span>
-            </div>
-            <!-- Modal -->
-            <div
-              class="modal fade"
-              id="kingsclean"
-              tabindex="-1"
-              aria-labelledby="exampleModalLabel"
-              aria-hidden="true"
-            >
-              <div
-                class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
-              >
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">
-                      King's clean
-                    </h5>
-                    <button
-                      type="button"
-                      class="btn-close btn-danger"
-                      data-bs-dismiss="modal"
-                      aria-label="Close"
-                    ></button>
-                  </div>
-                  <div class="modal-body">
-                    <div class="card" style="width: 100%">
-                      <div class="card-body">
-                        <h5 class="card-title">landing page</h5>
-                        <p class="card-text">
-                          The primary goal of this landing page is to clearly
-                          communicate our services to visitors as soon as they
-                          arrive. It ensures a seamless user experience with
-                          interactive elements and fast loading times. The
-                          design is straightforward yet comprehensive, providing
-                          all the necessary information efficiently.
-                        </p>
-
-                        <p class="lead">Tech Stack: HTML | CSS | javaScript</p>
-                        <p>
-                          <img
-                            src="/img/cleaning.jpeg"
-                            alt="demo store"
-                            class="card-img-top"
-                            alt="demo store"
-                            alt="cleaning page"
-                          />
-                        </p>
-                        <p>
-                          <a
-                            href="https://kingsclean.vercel.app/"
-                            target="_blank"
-                            class="btn btn-secondary"
-                            >Live Link</a
-                          >
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="modal-footer">
-                    <a
-                      href="https://kingsclean.vercel.app/"
-                      target="_blank"
-                      class="btn btn-secondary"
-                      >Live Link</a
-                    >
-                    <button
-                      type="button"
-                      class="btn btn-danger"
-                      data-bs-dismiss="modal"
-                    >
-                      x
-                    </button>
-                  </div>
+              <div class="card card_card">
+                <div class="card_heading">
+                  Tools
                 </div>
+                <ul>
+                  <li>Git</li>
+                  <li>GitHub</li>
+                  <li>Vercel</li>
+                  <li>Docker</li>
+                  <li>bash</li>
+                </ul>
+                <button>see more</button>
+                <div class="pointer"></div>
+                <div class="border-top"></div> 
+                <div class="border-bottom"></div>
               </div>
-            </div>
-          </div>
-
-          <div
-            class="project-column"
-            data-bs-toggle="modal"
-            data-bs-target="#portfolio"
-          >
-            <div class="project-card">
-              <img src="/img/myprofile.png" alt="portfolio picture" />
-            </div>
-            <div class="project-footer">
-              <span><strong>my portfolio</strong></span
-              ><br />
-              <span>HTML, CSS, Bootstrap javaScript</span>
-            </div>
-            <!-- Modal -->
-            <div
-              class="modal fade"
-              id="portfolio"
-              tabindex="-1"
-              aria-labelledby="exampleModalLabel"
-              aria-hidden="true"
-            >
-              <div
-                class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
-              >
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">
-                      Portfolio
-                    </h5>
-                    <button
-                      type="button"
-                      class="btn-close btn-danger"
-                      data-bs-dismiss="modal"
-                      aria-label="Close"
-                    ></button>
-                  </div>
-                  <div class="modal-body">
-                    <div class="card" style="width: 100%">
-                      <div class="card-body">
-                        <h5 class="card-title">Portfolio</h5>
-                        <p class="card-text">
-                          I developed my personal portfolio using vanilla
-                          JavaScript to have control over every line of code as
-                          much as possible, and styled it perfectly with CSS.
-                        </p>
-
-                        <p class="lead">
-                          Tech Stack: HTML,CSS, Bootstrap, javaScript.
-                        </p>
-                        <p>
-                          <img
-                            src="/img/myprofile.png"
-                            alt="demo store"
-                            class="card-img-top"
-                            alt="demo store"
-                            alt="cleaning page"
-                          />
-                        </p>
-                        <p>
-                          <a href="#" target="_blank" class="btn btn-secondary"
-                            >Live Link</a
-                          >
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="modal-footer">
-                    <a href="/#" target="_blank" class="btn btn-secondary"
-                      >Live Link</a
-                    >
-                    <button
-                      type="button"
-                      class="btn btn-danger"
-                      data-bs-dismiss="modal"
-                    >
-                      x
-                    </button>
-                  </div>
+              <div class="card card_card">
+                <div class="card_heading">
+                  Extra
                 </div>
+                <ul>
+                  <li>WSL</li>
+                  <li>SEO</li>
+                  <li>LAMP Stack</li>
+                  <li>LEMP Stack</li>
+                  <li>Mobile App</li>
+                  <li></li>
+                </ul>
+                <button>see more</button>
+                <div class="pointer"></div>
+                <div class="border-top"></div> 
+                <div class="border-bottom"></div>
               </div>
             </div>
           </div>
         </div>
-
+         
+        <!--right bar for large screen-->
         <div class="rightbar">
           <div>
             <h4>vision</h4>
@@ -666,17 +325,23 @@
             <div class="socials">
               <div title="twitter">
                 <a href="https://x.com/mutalibb" target="_blank">
-                  <img src="/icons8-twitter.svg" alt="twitter icon" />
+                  <img
+                    src="/rightbarimg/icons8-twitter.svg"
+                    alt="twitter icon"
+                  />
                 </a>
               </div>
               <div title="github">
                 <a href="https://github.com/temimutalibb" target="_blank">
-                  <img src="/icons8-github.svg" alt="github icon" />
+                  <img src="/rightbarimg/icons8-github.svg" alt="github icon" />
                 </a>
               </div>
               <div title="dev">
                 <a href="https://dev.to/mutalibb" target="_blank">
-                  <img src="/icons8-dev-community.svg" alt="dev dot to icon" />
+                  <img
+                    src="/rightbarimg/icons8-dev-community.svg"
+                    alt="dev dot to icon"
+                  />
                 </a>
               </div>
               <div title="upwork">
@@ -685,7 +350,7 @@
                   target="_blank"
                 >
                   <img
-                    src="/icons8-upwork-a-global-freelancing-platform-where-professionals-connect-and-collaborate-remotely-24.png"
+                    src="/rightbarimg/icons8-upwork-a-global-freelancing-platform-where-professionals-connect-and-collaborate-remotely-24.png"
                     alt="upwork icon"
                   />
                 </a>
@@ -707,124 +372,104 @@
               support me by following and interracting on my soicial accout
             </h4>
           </div>
-          <div>
-            <h4>coming soon</h4>
-            <h5>chat app</h5>
-            <img
-              src="/img/chatapp.jpeg"
-              style="object-fit: cover; height: 10rem"
-              alt="chatApp"
-            />
-            <h5>art market</h5>
-            <img
-              src="/img/dapp.jpeg"
-              style="object-fit: cover; height: 10rem"
-              alt="dapp"
-            />
-          </div>
         </div>
       </div>
-      <p class="stack-text">qualities</p>
+      
+      <!--my stack row-->
+      <p class="stack-text">my stack</p>
 
-      <div class="stack-row">
-        <div class="stack-round">
-          <div>
-            <strong>ATTENTION TO DETAILS</strong> <br /><br />
-            <i>Precision in coding to avoid error</i>
+      <div class="stack" id="stack">
+        <span class="arrowleft">
+          <img src="/stackimg/arrow_back.svg" alt="left arrow icon" />
+        </span>
+        <span class="arrowright">
+          <img src="/stackimg/arrow_forward.svg" alt="right arrow icon" />
+        </span>
+
+        <div class="stack-row">
+          <div class="stack-child">
+            <img src="/stackimg/bootstrap.jpg" alt="boot strap" />
           </div>
-        </div>
-        <div class="stack-round">
-          <div>
-            <strong>CONTINUOUS LEARNING</strong> <br /><br />
-            <i>Eager to learn new technologies...</i>
+          <div class="stack-child">
+            <img src="/stackimg/css.png" alt="css" />
           </div>
-        </div>
-        <div class="stack-round">
-          <div>
-            <strong>CREATIVITY</strong> <br /><br />
-            <i>Innovative thinking to come up with solutions</i>
+          <div class="stack-child">
+            <img src="/stackimg/expressjs.jpg" alt="expressjs" />
           </div>
-        </div>
-        <div class="stack-round">
-          <div>
-            <strong>COMMUNI CATION SKILLS</strong> <br /><br />
-            <i>My ability to collaborate effectively...</i>
+          <div class="stack-child">
+            <img src="/stackimg/git.png" alt="git" />
           </div>
-        </div>
-        <div class="stack-round">
-          <div>
-            <strong>TIME MANAGEMENT</strong> <br /><br />
-            <i> I efficiently managing time to meet deadlines.</i>
+          <div class="stack-child">
+            <img src="/stackimg/github.jpg" alt="github" />
           </div>
-        </div>
-        <div class="stack-round">
-          <div>
-            <strong>ADAPTABILITY</strong> <br /><br />
-            <i> I can easily adapt to new tools...</i>
+          <div class="stack-child">
+            <img src="/stackimg/html.png" alt="html" />
           </div>
-        </div>
-        <div class="stack-round">
-          <div>
-            <strong>TEAMWORK</strong> <br /><br />
-            <i>Ability to work well in a team.</i>
+          <div class="stack-child">
+            <img src="/stackimg/javascript.png" alt="javascript" />
           </div>
-        </div>
-        <div class="stack-round">
-          <div>
-            <strong>INTERGRITY</strong> <br /><br />
-            <i
-              >I am commited to writing secure, ethical, and maintainable
-              code.</i
-            >
+          <div class="stack-child">
+            <img src="/stackimg/mui.png" alt="mui" />
+          </div>
+          <div class="stack-child">
+            <img src="/stackimg/nodejs.png" alt="nodejs" />
+          </div>
+          <div class="stack-child">
+            <img src="/stackimg/npm.png" alt="npm" />
+          </div>
+          <div class="stack-child">
+            <img src="/stackimg/php.png" alt="php  " />
+          </div>
+          <div class="stack-child">
+            <img src="/stackimg/reactjs.png" alt="reactjs" />
+          </div>
+          <div class="stack-child">
+            <img src="/stackimg/sass.png" alt="sass" />
+          </div>
+          <div class="stack-child">
+            <img src="/stackimg/sql.png" alt="sql" />
+          </div>
+          <div class="stack-child">
+            <img src="/stackimg/vuejs.jpg" alt="vuejs" />
           </div>
         </div>
       </div>
 
-      <div class="fixcontact">
-        <a href="https://github.com/temimutalibb" target="_blank">
-          <img src="/chat.svg" alt="github image" />
-        </a>
+      <!--footer-->
+      <div class="footer">
+        <div><div class="card_heading">What i do</div>
+        <div>frontend</div>
+        <div>backend</div>
+        <div>database</div>
+        <div>cloud computing</div>
+        
       </div>
-
-      <div class="coming-soon-text followme">
-        <p class="followme">follow me</p>
+        <div>
+        <div>about</div>
+        <div>Hire me</div>
+        <div>projects</div>
+        <div>blog</div>
       </div>
-
-      <div class="follow">
-        <div title="twitter">
-          <a href="https://x.com/mutalibb">
-            <img src="/icons8-twitter.svg" alt="twitter icon" />
-          </a>
-        </div>
-        <div title="github">
-          <a href="https://github.com/Temimutalibb">
-            <img src="/icons8-github.svg" alt="github icon" />
-          </a>
-        </div>
-        <div title="hive">
-          <a href="https://inleo.io/profile/mutalibb">
-            <img src="/hive.jpg" alt="hive image" />
-          </a>
-        </div>
-        <div title="dev">
-          <a href="https://dev.to/mutalibb">
-            <img src="/icons8-dev-community.svg" alt="hive logo" />
-          </a>
-        </div>
-        <div title="upwork">
-          <a href="https://www.upwork.com/freelancers/~015629b1f9a993511c">
-            <img
-              src="/icons8-upwork-a-global-freelancing-platform-where-professionals-connect-and-collaborate-remotely-24.png"
-              alt="upwork logo"
-            />
-          </a>
+        <div>
+          <div class="card_heading">Contacts</div>
+          <div> <a href="https://x.com/mutalibb" target="_blank">twitter</a></a></div>
+          <div> <a
+            href="https://github.com/temimutalibb"
+            target="_blank"
+            class="contacts"
+            >github</a
+          ></div>
+          <div> <a href="https://dev.to/mutalibb" target="_blank">dev</a></div>
+          <div><a href="mailto:temitopking@icloud.com">Email</a></div>
         </div>
       </div>
-
-      <footer>
-        <div>mutalibb &copy; 2024</div>
-      </footer>
+      <div style="display:block; width:100%;text-align: center;">mutalibb &copy; 2024</div>
     </main>
+
+    <!--boot starp modal is define here-->
+    <div class="bootstrapmodal" style="color:blue">modal</div>
+    
+    <script type="module" src="/modal.js"></script>
     <script type="module" src="/main.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"

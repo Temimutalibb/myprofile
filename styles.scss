@@ -11,6 +11,66 @@ $blue:blue;
 * {
   box-sizing: border-box;
 }
+//for light theme
+.blue{
+  color:rgb(130, 141, 238);
+  background-color:white;
+  header{
+    background-color:white;
+    color:rgb(130, 141, 238) ;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.09);
+  }
+  .themelogo{
+    
+    background-color:black;
+    border-radius: 50%;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.09);
+  }
+  .dropdown,
+ .themeselect {
+  background-color:white;
+    color:rgb(130, 141, 238) ;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.09) ;
+}
+.stack-text {
+  background: linear-gradient(to right, white 0%,  rgb(130, 141, 238) , white 100%);
+  color:white;
+  font-size: 25px;
+  text-align: center;
+}
+.dropdown > div:hover {
+  background-color: rgb(130, 141, 238) ;
+  color:hsl(0, 0%, 98%);
+  
+}
+.icon{
+  background-color: rgb(130, 141, 238) 
+}
+.info{
+    color:rgb(130, 141, 238) 
+}
+.sub{
+  background-color: rgb(130, 141, 238) 
+}
+.tools{
+  .card{
+    background-color:white;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.09);
+  }
+  ul{
+    background-color:rgb(255, 255, 255,0.185);
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.09);
+    color:rgb(130, 141, 238) ;
+  }
+}
+.option{
+  box-shadow: 1px 1px 1px 0px rgb(130, 141, 238) ;
+}
+.footer{
+  background-color: white; 
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.09);
+}
+}
 /*for black theme */
 .dark{
   color: white;
@@ -18,12 +78,14 @@ $blue:blue;
     header{
       background-color:black;
       color: white;
+      box-shadow: 0px 0px 15px rgb(255, 255, 255,0.2);
     }
  .dropdown,
  .themeselect {
   background-color: #000000;
   color: white;
 }
+
  .stack-text {
   background: linear-gradient(to right, white 0%, black 50%, white 100%);
   color: white;
@@ -57,53 +119,6 @@ $blue:blue;
 }
   }
 
-  /* for blue theme */
-  .blue .dropdown, .blue .themeselect {
-    background-color:  rgb(0, 174, 255);// #53c0f2f5;
-    color: white;
-  }
-.blue{
-  background-color: rgba(230, 230, 250, 0.021);
-  color: rgba(0, 174, 255);
-  header {
-    background-color:  rgb(0, 174, 255);// #53c0f2f5;
-    color: white;
-  }
-   .stack-text {
-    background: linear-gradient(to right, white 0%,  rgba(0, 174, 255, 0.9) 50%, white 100%);
-    color: white;
-    font-size: 25px;
-    text-align: center;
-  }
-   .dropdown > div:hover {
-    background-color:  rgb(0, 217, 255);
-    color: white;
-    width: 100%;
-  }
-  .option{
-    box-shadow: 1px 1px 1px 0px rgb(0, 174, 255);
-  }
-  .icon{
-    background-color:rgb(0, 174, 255);
-  }
-  .info{
-    color:rgb(0, 174, 255);
-  }
-  .sub{
-    background-color: rgb(0, 174, 255);
-  }
-  .tools{
-    .card{
-      background-color: rgba(0, 174, 255, 0.897);
-    }
-    ul{
-      background-color: rgb(0, 174, 255);
-    }
-  }
-  .footer{
-    background-color:  rgba(0, 174, 255, 0.185); 
-  }
-}
 
 /*for brown theme */
 .brown,
@@ -767,24 +782,17 @@ body {
               flex-direction: row;
               justify-content: center;
               align-items: center;
-
               min-width: 40px;
               max-width: 40px;
               height: 40px;
               border-radius: 100%;
-
-              background-color:black;
               color: var(--defaultBackground);
             }
             .info {
               display: flex;
               flex-direction: column;
               justify-content: center;
-
               margin-left: 10px;
-
-              color: black;
-
               white-space: pre;
               > div {
                 position: relative;
@@ -799,7 +807,6 @@ body {
               .sub {
                 transition-delay: 0.1s;
                 outline: none;
-                background-color: #000000;
                 color: white;
                 border: 2px dashed white; //#daa06d;
                 border-radius: 15px;

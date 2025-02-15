@@ -582,11 +582,12 @@ body {
     font-size: 1.1rem;
     line-height: 1.2;
     color: #ddd;
-    height: 300px;
-    overflow: hidden;
+    min-height: 300px;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    padding: 1rem  0;
   }
   li {
     padding: 1px;
@@ -601,6 +602,7 @@ body {
     opacity: 0.5;
     border:0px ;
     padding: 5px;
+    
   }
   button:hover{
     opacity: 1;

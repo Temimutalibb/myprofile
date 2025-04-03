@@ -1,5 +1,154 @@
 const modal = document.querySelector(".bootstrapmodal");
 modal.innerHTML = `
+<!--for clancircle-->
+<div
+      class="modal fade"
+      id="clancircle"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Clan Circle</h5>
+            <button
+              type="button"
+              class="btn-close btn-danger"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="card" style="width: 100%">
+              <div class="card-body">
+                <h5 class="card-title">Mobile Social App</h5>
+                <p class="card-text">
+                 Clan Circle is a social engagement platform 
+                 that allows users to create and follow 
+                 Circles, share content, and earn rewards 
+                 through interactions. Whether you’re
+                  looking to increase engagement,
+                   discover new content, or grow your 
+                   audience, Clan Circle makes it 
+                   easy and rewarding.
+                </p>
+
+                <p class="lead">Tech Stack: React Native, Firebase,
+                Expo, Android Studio.</p>
+                <p>
+                  <img
+                    src="./clancircle/one.jpg"
+                    alt="demo store"
+                    class="card-img-top"
+                    alt="demo store"
+                    alt="cleaning page"
+                  />
+                </p>
+                <p>
+                  <a
+                   href="https://clancircle.mutalibb.xyz" target="_blank"
+                    target="_blank"
+                    class="btn btn-secondary"
+                    >Live Link</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <a
+             href="https://clancircle.mutalibb.xyz" target="_blank"
+              target="_blank"
+              class="btn btn-secondary"
+              >Live Link</a
+            >
+            <button
+              type="button"
+              class="btn btn-danger"
+              data-bs-dismiss="modal"
+            >
+              x
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!--for blogit-->
+<div
+      class="modal fade"
+      id="blogit"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">blogIt</h5>
+            <button
+              type="button"
+              class="btn-close btn-danger"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="card" style="width: 100%">
+              <div class="card-body">
+                <h5 class="card-title">Blog </h5>
+                <p class="card-text">
+                  A  web blog app that allow users to post anonymously and still
+         have control over their contents. 
+         Readers and writers dont have to register 
+         before using it, making accessibility 
+         faster.
+                </p>
+
+                <p class="lead">Tech Stack:reactjs, nodejs,
+                axios,vercel
+                expressJs Android Studio.</p>
+                <p>
+                  <img
+                    src="./blogit/one.jpg"
+                    alt="demo store"
+                    class="card-img-top"
+                    alt="demo store"
+                    alt="cleaning page"
+                  />
+                </p>
+                <p>
+                  <a
+                   href="https://blogit.mutalibb.xyz" target="_blank"
+                    target="_blank"
+                    class="btn btn-secondary"
+                    >Live Link</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <a
+             href="https://blogit.mutalibb.xyz" target="_blank"
+              target="_blank"
+              class="btn btn-secondary"
+              >Live Link</a
+            >
+            <button
+              type="button"
+              class="btn btn-danger"
+              data-bs-dismiss="modal"
+            >
+              x
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
 <!--for demostore-->
 <div
       class="modal fade"

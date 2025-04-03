@@ -27,451 +27,564 @@
   </head>
   <body class="bodycolor dark">
 
+    <div class="mobileview">
     <!--head bar-->
     <div id="header">
       <header>
-        <div>
-          <img
-            src="leftbarimg/menu.svg"
-            class="header-dropdown"
-            height="35px"
-            width="35px"
-            id="header-dropdown"
-            alt="dropdown icon"
+        <div class="backcover" >
+          <img class="backimg" src="/profilebackground.jpg"/>  
+        </div>
+        <div class="introcover">
+          <div class="imagecover"> 
+            <img
+            src="./bitmoji.jpg"
+            class="img"
+            alt="welcome art image"
           />
+          <h1 class="name">Mutalibb</h1>
+          <div class ="username">@Topking</div>
         </div>
-        <div class="logo">mutalibb</div>
-        <div class="theme">
-          <svg
-          class="themelogo"
-            xmlns="http://www.w3.org/2000/svg"
-            height="24px"
-            viewBox="0 -960 960 960"
-            width="24px"
-            fill="#ffffff"
-          >
-            <path
-              d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm40-83q119-15 199.5-104.5T800-480q0-123-80.5-212.5T520-797v634Z"
-              class="theme"
+
+          <div class="follow">
+            <div title="send email"> 
+              <a href="mailto:temitopking@icloud.com">
+                <img
+              src="./communication.png"
+              class="email"
+              alt="welcome art image"
             />
-          </svg>
+              </a>
+          </div>
+            <div title="subscribe">
+              <a href="mailto:temitopking@icloud.com?subject=Hello&body=I want to contact you.">
+                <img
+                src="./follower.png"
+                class="subscribe"
+                alt="welcome art image"
+              />
+              </a>
+            </div>
+            <div class="contact">contact</div>
+          </div>
         </div>
+       <div class="intro">
+        <div class="introtext">Agric...Tech || full-stack web developer || A farmer
+          || React Native Developer || Solving ten problems at a time.
+        </div>
+        <div class="occupationcover">
+          <div class="jobcover">
+            <img
+            src="./briefcase.png"
+            class="jobimage"
+            alt="welcome art image"
+          />
+            <diV>
+              Software developer
+            </diV>
+         
+          </div>
+          <div class="jobcover">
+            <img
+            src="./arrows.png"
+            class="jobimage"
+            alt="welcome art image"
+          />
+            <diV>
+              Nigeria
+            </diV>
+         
+          </div>
+          <div class="jobcover">
+            <img
+            src="./link.png"
+            class="jobimage"
+            alt="welcome art image"
+          />
+            <diV>
+              mutalibb.xyz
+            </diV>
+         
+          </div>
+        </div>
+        
+        <div class="jobcover">
+          <img
+          src="./calendar.png"
+          class="jobimage"
+          alt="welcome art image"
+        />
+          <diV class="birth">
+            Born October 21
+          </diV>
+       
+        </div>
+       </div>
       </header>
-
-     <!--for the left bar dropdown-->
-      <div class="dropdown" id="dropdown">
-        <span class="close" title="close">x</span>
-        <div>
-          <img src="/leftbarimg/icons8-about-me-48.png" alt="about me icon" />
-          <a href="#about" class="about">about</a>
-        </div>
-        <div>
-          <img src="/leftbarimg/icons8-cv-80.png" alt="cv icon" />
-          <a
-            href="https://drive.google.com/file/d/1nXGiNvxBJ0Zx-VpnjutE-S2v3q4l8N8B/view?usp=sharing"
-            class="cv"
-            >CV</a
-          >
-        </div>
-        <div>
-          <img src="/leftbarimg/icons8-stack-40.png" alt="stack icon" />
-          <a href="#stack" class="stack">stack</a>
-        </div>
-        <div>
-          <img src="/leftbarimg/icons8-project-48.png" alt="project icon" />
-          <a href="#projects" class="projects">projects</a>
-        </div>
-        <div>
-          <img src="/leftbarimg/icons8-games-48.png" alt="game icon" />
-          <a href="#games" class="games">games</a>
-        </div>
-        <div>
-          <img src="/leftbarimg/icons8-blog-48.png" alt="blog icon" />
-          <a href="https://blogit.mutalibb.xyz" target="_blank" class="blogs"
-            >blog</a
-          >
-        </div>
-        <div>
-          <img src="/leftbarimg/icons8-contact-40.png" alt="github icon" />
-          <a
-            href="https://github.com/temimutalibb"
-            target="_blank"
-            class="contacts"
-            >contacts</a
-          >
-        </div>
       </div>
+  <main>
+   <div class="projectscover">
+    <div tabindex="0" class="projects" data-target="#projectsection">Projects</div>
+    <div tabindex="0" class="about" data-target="#aboutsection">About</div>
+    <div tabindex="0" class="tools" data-target="#toolssection">Tools</div>
+    <div tabindex="0" class="photos" data-target="#photosection">Photos</div>
+    <div tabindex="0" class="post" data-target="#postsection">Post</div>
+    <div tabindex="0" class="blog" data-target="#blogsection">Games</div>
+   </div>
+   <div class="linecover">
+    <div class="moveline"></div>
+    <hr class="line"/>
+   </div>
 
-      <!--for theme selsction-->
-      <div class="themeselect">
-        <p>theme</p>
-        <label for="dark">
-          <input
-            type="radio"
-            id="dark"
-            name="theme"
-            class="themeradio"
-            value="dark"
-            checked
-          />dark
-        </label>
-        <label for="blue">
-          <input
-            type="radio"
-            id="blue"
-            name="theme"
-            class="themeradio"
-            value="blue"
-          />light
-        </label>
-        <label for="brown">
-          <input
-            type="radio"
-            id="brown"
-            name="theme"
-            class="themeradio"
-            value="brown"
-          />brown
-        </label>
-      </div>
+
+
+
+   <section id="projectsection" class="section">
+    <div class="projectscreen"></div>
+     <!--for clan circle mobile-->
+   </section>
+
+<section id="aboutsection" class="section">
+<div class="aboutscreen">
+  <div class="imagecover">
+    <img class="mypicture" src="/img/mypicture.JPG"/>
+  </div>
+<P>I’m a full-stack developer passionate about 
+  solving problems and writing clean, 
+  efficient code. With a diverse background in web and mobile development, 
+  I’ve worked on various projects—ranging from enterprise applications 
+  to innovative startups—that have honed my expertise in technologies like Next.js, React, Express, PostgreSQL, Firebase, and Expo.
+Currently, I’m developing a blockchain-powered social 
+platform where users earn cryptocurrency for their engagement.
+ My experience spans front-end, back-end, and mobile app development, 
+ along with authentication, database management, and Web3 integrations.
+</P>
+<p>
+I enjoy tackling complex challenges, 
+continuously learning new technologies,
+ and turning ideas into functional 
+ products. I’m open to collaboration and always eager to contribute to innovative projects. 
+ Let’s build something amazing together!
+</P>
+</div>
+</section>
+
+<section id="toolssection" class="section">
+  <div class="toolsscreen"></div>
+</section>
+
+
+
+
+<section id="blogsection" class="section">Games Section Content</section>
+
+<section id="photosection" class="section">Photos Section Content</section>
+<section id="postsection" class="section">Post Section Content</section>
+   
+  </main>
+   
+<div class="contantsdetails">
+  <div class="detailsflex">
+    <div title="twitter">
+      <a href="https://x.com/mutalibb" target="_blank">
+        <img
+        src="/contacts/xwhite.png"
+          alt="twitter icon"
+        />
+      </a>
     </div>
-    <!--head bar stop here-->
-    
-    <main>
-      <img
-      src="./bitmoji.jpg"
-      style="margin-top: 7px; 
-      border-radius: 50%; width:10rem;
-      height:10rem;margin:auto;display: block;margin-top: 22px;"
-      alt="welcome art image"
-    />
-      
-      <div class="intro" id="about">
-        I’m Mutalibb, a software developer passionate about solving problems and
-        writing clean, accessible code with SEO and ARIA in mind. With a strong
-        foundation in both frontend and backend technologies, I specialize in
-        creating seamless, user-friendly web applications.
+    <div title="github">
+      <a href="https://github.com/temimutalibb" target="_blank">
+        <img src="/contacts/githubwhite.png" alt="github icon" />
+      </a>
+    </div>
+    <div title="dev">
+      <a href="https://dev.to/mutalibb" target="_blank">
+        <img
+          src="/contacts/devv.png"
+          alt="dev dot to icon"
+        />
+      </a>
+    </div>
+    <div title="email">
+      <a href="mailto:temitopking@icloud.com" target="_blank">
+        <img
+          src="/contacts/email.png"
+          alt="dev dot to icon"
+        />
+      </a>
+    </div>
+    <div title="whatsapp">
+      <a href="https://wa.me/2349037660869" target="_blank">
+        <img
+        src="/contacts/whatsapp.png"
+        alt="dev dot to icon"
+      />
+      </a> 
+    </div>
+   
+  </div>
+  <div  class="detailscancel">
+    <img
+         src="./cancel.png"
+         
+            alt="x"
+          />
+  </div>
+</div> 
+</div>
+<!--Mobie view end -->
+
+
+      <!--for larger screen -->
+      <div class="largerscreen">
+      <!--head bar-->
+      <div id="header">
+        <header>
+          <div>
+            
+          </div>
+          <div class="logo">mutalibb</div>
+          <div class="theme">
+            
+          </div>
+        </header>
+  
+       <!--for the left bar dropdown-->
+        <div class="dropdown" id="dropdown">
+          <span class="close" title="close">x</span>
+          <div>
+            <img src="/leftbarimg/icons8-about-me-48.png" alt="about me icon" />
+            <a href="#about" class="about">about</a>
+          </div>
+          <div>
+            <img src="/leftbarimg/icons8-cv-80.png" alt="cv icon" />
+            <a
+              href="https://drive.google.com/file/d/1nXGiNvxBJ0Zx-VpnjutE-S2v3q4l8N8B/view?usp=sharing"
+              class="cv"
+              >CV</a
+            >
+          </div>
+          <div>
+            <img src="/leftbarimg/icons8-stack-40.png" alt="stack icon" />
+            <a href="#stack" class="stack">stack</a>
+          </div>
+          <div>
+            <img src="/leftbarimg/icons8-project-48.png" alt="project icon" />
+            <a href="#projects" class="project">projects</a>
+          </div>
+          <div>
+            <img src="/leftbarimg/icons8-games-48.png" alt="game icon" />
+            <a href="#games" class="games">games</a>
+          </div>
+          <div>
+            <img src="/leftbarimg/icons8-blog-48.png" alt="blog icon" />
+            <a href="https://blogit.mutalibb.xyzcd" target="_blank" class="blogs"
+              >blog</a
+            >
+          </div>
+          <div>
+            <img src="/leftbarimg/icons8-contact-40.png" alt="github icon" />
+            <a
+              href="https://github.com/temimutalibb"
+              target="_blank"
+              class="contacts"
+              >contacts</a
+            >
+          </div>
+        </div>
+  
+        <!--for theme selsction-->
+        <div class="themeselect">
+          
+        </div>
       </div>
+      <!--head bar stop here-->
 
-      <p class="stack-text" id="projects">some of my projects</p>
+      <main>
+        <img
+        src="./bitmoji.jpg"
+        style="margin-top: 7px; 
+        border-radius: 50%; width:10rem;
+        height:10rem;margin:auto;display: block;margin-top: 22px;"
+        alt="welcome art image"
+      />
+        
+        <div class="intro" id="about">
+          I’m Mutalibb, a software developer passionate about solving problems and
+          writing clean, accessible code with SEO and ARIA in mind. With a strong
+          foundation in both frontend and backend technologies, I specialize in
+          creating seamless, user-friendly web applications.
+        </div>
+  
+        <p class="stack-text" id="projects">some of my projects</p>
+<!--for large screen-->
 
-      <div class="largescreen">
+        <div class="largescreen">
 
-        <!--for projects-->
-        <div class="project-row" id="project-row">
-          <div class="options">
-            <div
-              class="option active"
-              style="--optionBackground: url('/img/demostore.jpeg')"
-            >
-              <div class="shadow"></div>
-              <div class="label">
-                <div class="icon">
-                  <i class="fas fa-walking"></i>
+          <!--for projects-->
+          <div class="project-row" id="project-row">
+            <div class="options">
+              <div
+                class="option active"
+                style="--optionBackground: url('/img/demostore.jpeg')"
+              >
+                <div class="shadow"></div>
+                <div class="label">
+                  <div class="icon">
+                    <i class="fas fa-walking"></i>
+                  </div>
+                  <div class="info">
+                    <div class="main">clothing line store</div>
+                    <button id="demostorebtn" class="sub">view live</button>
+                  </div>
                 </div>
-                <div class="info">
-                  <div class="main">clothing line store</div>
-                  <button id="demostorebtn" class="sub">view live</button>
+              </div>
+              <div
+                class="option"
+                style="--optionBackground: url('/img/rokonote.png')"
+              >
+                <div class="shadow"></div>
+                <div class="label">
+                  <div class="icon">
+                    <i class="fas fa-snowflake"></i>
+                  </div>
+                  <div class="info">
+                    <div class="main">Note taking app</div>
+                    <button id="rokonotebtn" class="sub">view live</button>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="option"
+                style="--optionBackground: url(/img/wiiapp.png)"
+              >
+                <div class="shadow"></div>
+                <div class="label">
+                  <div class="icon">
+                    <i class="fas fa-tree"></i>
+                  </div>
+                  <div class="info">
+                    <div class="main">Messaging app</div>
+                    <button id="wiibtn" class="sub">view live</button>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="option"
+                style="--optionBackground: url('/img/cleaning.jpeg')"
+              >
+                <div class="shadow"></div>
+                <div class="label">
+                  <div class="icon">
+                    <i class="fas fa-tint"></i>
+                  </div>
+                  <div class="info">
+                    <div class="main">company landing page</div>
+                    <button  id="kingsbtn" class="sub">view live</button>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="option"
+                style="--optionBackground: url('/img/myprofile.png')"
+              >
+                <div class="shadow"></div>
+                <div class="label">
+                  <div class="icon">
+                    <i class="fas fa-sun"></i>
+                  </div>
+                  <div class="info">
+                    <div class="main">my portfolio</div>
+                    <button id="profilebtn" class="sub">view live</button>
+                  </div>
                 </div>
               </div>
             </div>
-            <div
-              class="option"
-              style="--optionBackground: url('/img/rokonote.png')"
-            >
-              <div class="shadow"></div>
-              <div class="label">
-                <div class="icon">
-                  <i class="fas fa-snowflake"></i>
+             
+            <!--for tools -->
+            <p class="stack-text">tools</p>
+            <div class="tools">
+              <div class="cards">
+                <div class="card card_card">
+                  <div class="card_heading">
+                    Frontend
+                  </div>
+                  <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>javaScript</li>
+                    <li>TypeScript</li>
+                    <li>React</li>
+                    <li>Vue</li>
+                    <li>Tailwind CSS</li>
+                    <li>Bootstrap</li>
+                     <li>Sass</li>
+                    <li>MUi</li>
+                  </ul>
+                  
+                  <div class="pointer"></div>
+                  <div class="border-top"></div> 
+                  <div class="border-bottom"></div>
                 </div>
-                <div class="info">
-                  <div class="main">Note taking app</div>
-                  <button id="rokonotebtn" class="sub">view live</button>
+                <div class="card card_card">
+                  <div class="card_heading">
+                    Backend
+                  </div>
+                  <ul>
+                    <li>Node.js</li>
+                    <li>Express</li>
+                    <li>PHP</li>
+                    <li>Laravel</li>
+                    <li>MongoDB</li>
+                    <li>postgresSQL</li>
+                  </ul>
+                 
+                  <div class="pointer"></div>
+                  <div class="border-top"></div> 
+                  <div class="border-bottom"></div>
                 </div>
-              </div>
-            </div>
-            <div
-              class="option"
-              style="--optionBackground: url(/img/wiiapp.png)"
-            >
-              <div class="shadow"></div>
-              <div class="label">
-                <div class="icon">
-                  <i class="fas fa-tree"></i>
+                <div class="card card_card">
+                  <div class="card_heading">
+                    Tools
+                  </div>
+                  <ul>
+                    <li>Git</li>
+                    <li>GitHub</li>
+                    <li>Vercel</li>
+                    <li>Docker</li>
+                    <li>bash</li>
+                  </ul>
+                
+                  <div class="pointer"></div>
+                  <div class="border-top"></div> 
+                  <div class="border-bottom"></div>
                 </div>
-                <div class="info">
-                  <div class="main">Messaging app</div>
-                  <button id="wiibtn" class="sub">view live</button>
-                </div>
-              </div>
-            </div>
-            <div
-              class="option"
-              style="--optionBackground: url('/img/cleaning.jpeg')"
-            >
-              <div class="shadow"></div>
-              <div class="label">
-                <div class="icon">
-                  <i class="fas fa-tint"></i>
-                </div>
-                <div class="info">
-                  <div class="main">company landing page</div>
-                  <button  id="kingsbtn" class="sub">view live</button>
-                </div>
-              </div>
-            </div>
-            <div
-              class="option"
-              style="--optionBackground: url('/img/myprofile.png')"
-            >
-              <div class="shadow"></div>
-              <div class="label">
-                <div class="icon">
-                  <i class="fas fa-sun"></i>
-                </div>
-                <div class="info">
-                  <div class="main">my portfolio</div>
-                  <button id="profilebtn" class="sub">view live</button>
+                <div class="card card_card">
+                  <div class="card_heading">
+                    Extra
+                  </div>
+                  <ul>
+                    <li>WSL</li>
+                    <li>SEO</li>
+                    <li>LAMP Stack</li>
+                    <li>LEMP Stack</li>
+                    <li>Mobile App</li>
+                    <li></li>
+                  </ul>
+                  
+                  <div class="pointer"></div>
+                  <div class="border-top"></div> 
+                  <div class="border-bottom"></div>
                 </div>
               </div>
             </div>
           </div>
            
-          <!--for tools -->
-          <p class="stack-text">tools</p>
-          <div class="tools">
-            <div class="cards">
-              <div class="card card_card">
-                <div class="card_heading">
-                  Frontend
+          <!--right bar for large screen-->
+          <div class="rightbar">
+            <div>
+              <h4>vision</h4>
+              My vision is to continuously building amazing applications that are
+              useful to everyone.
+            </div>
+            <div>
+              <h1>follow me on my socials</h1>
+              <div class="socials">
+                <div title="twitter">
+                  <a href="https://x.com/mutalibb" target="_blank">
+                    <img
+                      src="/rightbarimg/icons8-twitter.svg"
+                      alt="twitter icon"
+                    />
+                  </a>
                 </div>
-                <ul>
-                  <li>HTML</li>
-                  <li>CSS</li>
-                  <li>javaScript</li>
-                  <li>TypeScript</li>
-                  <li>React</li>
-                  <li>Vue</li>
-                  <li>Tailwind CSS</li>
-                  <li>Bootstrap</li>
-                   <li>Sass</li>
-                  <li>MUi</li>
-                </ul>
-                
-                <div class="pointer"></div>
-                <div class="border-top"></div> 
-                <div class="border-bottom"></div>
-              </div>
-              <div class="card card_card">
-                <div class="card_heading">
-                  Backend
+                <div title="github">
+                  <a href="https://github.com/temimutalibb" target="_blank">
+                    <img src="/rightbarimg/icons8-github.svg" alt="github icon" />
+                  </a>
                 </div>
-                <ul>
-                  <li>Node.js</li>
-                  <li>Express</li>
-                  <li>PHP</li>
-                  <li>Laravel</li>
-                  <li>MongoDB</li>
-                  <li>postgresSQL</li>
-                </ul>
-               
-                <div class="pointer"></div>
-                <div class="border-top"></div> 
-                <div class="border-bottom"></div>
-              </div>
-              <div class="card card_card">
-                <div class="card_heading">
-                  Tools
+                <div title="dev">
+                  <a href="https://dev.to/mutalibb" target="_blank">
+                    <img
+                      src="/rightbarimg/icons8-dev-community.svg"
+                      alt="dev dot to icon"
+                    />
+                  </a>
                 </div>
-                <ul>
-                  <li>Git</li>
-                  <li>GitHub</li>
-                  <li>Vercel</li>
-                  <li>Docker</li>
-                  <li>bash</li>
-                </ul>
-              
-                <div class="pointer"></div>
-                <div class="border-top"></div> 
-                <div class="border-bottom"></div>
-              </div>
-              <div class="card card_card">
-                <div class="card_heading">
-                  Extra
+                <div title="upwork">
+                  <a
+                    href="https://www.upwork.com/freelancers/~015629b1f9a993511c"
+                    target="_blank"
+                  >
+                    <img
+                      src="/rightbarimg/icons8-upwork-a-global-freelancing-platform-where-professionals-connect-and-collaborate-remotely-24.png"
+                      alt="upwork icon"
+                    />
+                  </a>
                 </div>
-                <ul>
-                  <li>WSL</li>
-                  <li>SEO</li>
-                  <li>LAMP Stack</li>
-                  <li>LEMP Stack</li>
-                  <li>Mobile App</li>
-                  <li></li>
-                </ul>
-                
-                <div class="pointer"></div>
-                <div class="border-top"></div> 
-                <div class="border-bottom"></div>
               </div>
+              <i
+                ><a target="_blank" href="https://icons8.com/icon/"></a> icon by
+                <a target="_blank" href="https://icons8.com">Icons8</a></i
+              >
+            </div>
+            <div>
+              <h4>
+                I'm commited to keep building amzing apps, support me, buy me a
+                coffee
+              </h4>
+            </div>
+            <div>
+              <h4>
+                support me by following and interracting on my soicial accout
+              </h4>
             </div>
           </div>
         </div>
-         
-        <!--right bar for large screen-->
-        <div class="rightbar">
-          <div>
-            <h4>vision</h4>
-            My vision is to continuously building amazing applications that are
-            useful to everyone.
-          </div>
-          <div>
-            <h1>follow me on my socials</h1>
-            <div class="socials">
-              <div title="twitter">
-                <a href="https://x.com/mutalibb" target="_blank">
-                  <img
-                    src="/rightbarimg/icons8-twitter.svg"
-                    alt="twitter icon"
-                  />
-                </a>
-              </div>
-              <div title="github">
-                <a href="https://github.com/temimutalibb" target="_blank">
-                  <img src="/rightbarimg/icons8-github.svg" alt="github icon" />
-                </a>
-              </div>
-              <div title="dev">
-                <a href="https://dev.to/mutalibb" target="_blank">
-                  <img
-                    src="/rightbarimg/icons8-dev-community.svg"
-                    alt="dev dot to icon"
-                  />
-                </a>
-              </div>
-              <div title="upwork">
-                <a
-                  href="https://www.upwork.com/freelancers/~015629b1f9a993511c"
-                  target="_blank"
-                >
-                  <img
-                    src="/rightbarimg/icons8-upwork-a-global-freelancing-platform-where-professionals-connect-and-collaborate-remotely-24.png"
-                    alt="upwork icon"
-                  />
-                </a>
-              </div>
-            </div>
-            <i
-              ><a target="_blank" href="https://icons8.com/icon/"></a> icon by
-              <a target="_blank" href="https://icons8.com">Icons8</a></i
-            >
-          </div>
-          <div>
-            <h4>
-              I'm commited to keep building amzing apps, support me, buy me a
-              coffee
-            </h4>
-          </div>
-          <div>
-            <h4>
-              support me by following and interracting on my soicial accout
-            </h4>
-          </div>
-        </div>
-      </div>
-      
-      <!--my stack row-->
-      <p class="stack-text">my stack</p>
-
-      <div class="stack" id="stack">
-        <span class="arrowleft">
-          <img src="/stackimg/arrow_back.svg" alt="left arrow icon" />
-        </span>
-        <span class="arrowright">
-          <img src="/stackimg/arrow_forward.svg" alt="right arrow icon" />
-        </span>
-
-        <div class="stack-row">
-          <div class="stack-child">
-            <img src="/stackimg/bootstrap.jpg" alt="boot strap" />
-          </div>
-          <div class="stack-child">
-            <img src="/stackimg/css.png" alt="css" />
-          </div>
-          <div class="stack-child">
-            <img src="/stackimg/expressjs.jpg" alt="expressjs" />
-          </div>
-          <div class="stack-child">
-            <img src="/stackimg/git.png" alt="git" />
-          </div>
-          <div class="stack-child">
-            <img src="/stackimg/github.jpg" alt="github" />
-          </div>
-          <div class="stack-child">
-            <img src="/stackimg/html.png" alt="html" />
-          </div>
-          <div class="stack-child">
-            <img src="/stackimg/javascript.png" alt="javascript" />
-          </div>
-          <div class="stack-child">
-            <img src="/stackimg/mui.png" alt="mui" />
-          </div>
-          <div class="stack-child">
-            <img src="/stackimg/nodejs.png" alt="nodejs" />
-          </div>
-          <div class="stack-child">
-            <img src="/stackimg/npm.png" alt="npm" />
-          </div>
-          <div class="stack-child">
-            <img src="/stackimg/php.png" alt="php  " />
-          </div>
-          <div class="stack-child">
-            <img src="/stackimg/reactjs.png" alt="reactjs" />
-          </div>
-          <div class="stack-child">
-            <img src="/stackimg/sass.png" alt="sass" />
-          </div>
-          <div class="stack-child">
-            <img src="/stackimg/sql.png" alt="sql" />
-          </div>
-          <div class="stack-child">
-            <img src="/stackimg/vuejs.jpg" alt="vuejs" />
-          </div>
-        </div>
-      </div>
-
-      <!--footer-->
-      <div class="footer">
-        <div><div class="card_heading">What i do</div>
-        <div>frontend</div>
-        <div>backend</div>
-        <div>database</div>
-        <div>cloud computing</div>
         
-      </div>
-        <div>
-        <div>about</div>
-        <div>Hire me</div>
-        <div>projects</div>
-        <div>blog</div>
-      </div>
-        <div>
-          <div class="card_heading">Contacts</div>
-          <div> <a href="https://x.com/mutalibb" target="_blank">twitter</a></a></div>
-          <div> <a
-            href="https://github.com/temimutalibb"
-            target="_blank"
-            class="contacts"
-            >github</a
-          ></div>
-          <div> <a href="https://dev.to/mutalibb" target="_blank">dev</a></div>
-          <div><a href="mailto:temitopking@icloud.com">Email</a></div>
+        <!--my stack row-->
+        <p class="stack-text">my stack</p>
+  
+       
+  
+        <!--footer-->
+        <div class="footer">
+          <div><div class="card_heading">What i do</div>
+          <div>frontend</div>
+          <div>backend</div>
+          <div>database</div>
+          <div>cloud computing</div>
+          
         </div>
-      </div>
-      <div style="display:block; width:100%;text-align: center;">mutalibb &copy; 2024</div>
-    </main>
+          <div>
+          <div>about</div>
+          <div>Hire me</div>
+          <div>projects</div>
+          <div>blog</div>
+        </div>
+          <div>
+            <div class="card_heading">Contacts</div>
+            <div> <a href="https://x.com/mutalibb" target="_blank">twitter</a></a></div>
+            <div> <a
+              href="https://github.com/temimutalibb"
+              target="_blank"
+              class="contacts"
+              >github</a
+            ></div>
+            <div> <a href="https://dev.to/mutalibb" target="_blank">dev</a></div>
+            <div><a href="mailto:temitopking@icloud.com">Email</a></div>
+          </div>
+        </div>
+        <div style="display:block; width:100%;text-align: center;">mutalibb &copy; 2024</div>
+      </main>
+    
+</div>
 
     <!--boot starp modal is define here-->
     <div class="bootstrapmodal" style="color:blue">modal</div>
     
+    <script type="module" src="/toolsscreen.js"></script>
+    <script type="module" src="/projectscreen.js"></script>
     <script type="module" src="/modal.js"></script>
     <script type="module" src="/main.js"></script>
     <script

@@ -2,6 +2,56 @@ import $ from "jquery";
 import "./style.css";
 import "./styles.scss";
 
+$(".projects").css({
+  "font-weight": "700",
+  color: "white",
+});
+
+$(".projectscover > div").on("click", function () {
+  // Get the target section from the data attribute
+  const targetSection = $(this).data("target");
+
+  // Hide all sections with a sliding effect
+  $(".section").slideUp();
+
+  // Show the target section with a sliding effect
+  $(targetSection).slideDown();
+
+  // Reset the styles for all divs
+  $(".projectscover > div").css({
+    "font-weight": "500",
+    color: "rgba(211, 211, 211, 0.575)",
+  });
+
+  // Highlight the clicked div
+  $(this).css({
+    "font-weight": "700",
+    color: "white",
+  });
+
+  // Move the .moveline under the clicked element
+  const $moveline = $(".moveline");
+  const $this = $(this);
+  const leftPosition = $this.position().left;
+  const elementWidth = $this.outerWidth();
+
+  // Move the .moveline under the clicked element
+  $moveline.css({
+    left: leftPosition + "px",
+    width: elementWidth + "px",
+  });
+});
+
+//auto display the project section
+$("#projectsection").css({
+  display: "block",
+});
+
+$(".contact, .detailscancel ").on("click", function () {
+  const $contactDetails = $(".contantsdetails");
+  $contactDetails.slideToggle();
+});
+
 //for the option styling
 $(".option").on("click", function () {
   $(".option").removeClass("active");
@@ -9,23 +59,28 @@ $(".option").on("click", function () {
 });
 
 //custom boostrap style for project modal
-$("#demostorebtn").on("click", function () {
+$("#clancirclebtn, #clanseemore").on("click", function () {
+  const myModal = new bootstrap.Modal(document.getElementById("clancircle"));
+  myModal.show();
+});
+$("#bloginbtn, #blogitseemore").on("click", function () {
+  const myModal = new bootstrap.Modal(document.getElementById("blogit"));
+  myModal.show();
+});
+$("#demostorebtn, #demoseemore").on("click", function () {
   const myModal = new bootstrap.Modal(document.getElementById("demostore"));
   myModal.show();
 });
-$("#profilebtn").on("click", function () {
+$("#profilebtn, #profileseemore").on("click", function () {
   const myModal = new bootstrap.Modal(document.getElementById("portfolio"));
   myModal.show();
 });
-$("#kingsbtn").on("click", function () {
-  const myModal = new bootstrap.Modal(document.getElementById("kingsclean"));
-  myModal.show();
-});
-$("#wiibtn").on("click", function () {
+
+$("#wiibtn, #wiiseemore").on("click", function () {
   const myModal = new bootstrap.Modal(document.getElementById("wiiapp"));
   myModal.show();
 });
-$("#rokonotebtn").on("click", function () {
+$("#rokonotebtn, #rokoseemore").on("click", function () {
   const myModal = new bootstrap.Modal(document.getElementById("rokonote"));
   myModal.show();
 });
@@ -100,68 +155,3 @@ $(".card_card").on("mousemove", function (event) {
     .css({ left: (pointerX / width) * 75 + "%" });
 });
 ////////////////////////////////////////////////
-
-///vanilla for headers theme and drop down
-const themeButton = document.querySelector(".theme");
-const themeSelect = document.querySelector(".themeselect");
-const themeRadio = document.getElementsByName("theme");
-const bodyColor = document.querySelector(".bodycolor");
-const menuButton = document.getElementById("header-dropdown");
-const dropdown = document.querySelector("#dropdown");
-const close = document.querySelector(".close");
-const stackRow = document.getElementById("stack");
-const arrowBack = document.querySelector(".arrowleft");
-const arrowForward = document.querySelector(".arrowright");
-
-themeButton.addEventListener("click", (event) => {
-  event.stopPropagation();
-  if (themeSelect.style.display === "block") {
-    themeSelect.style.display = "none";
-  } else {
-    themeSelect.style.display = "block";
-  }
-});
-
-themeRadio.forEach((element) => {
-  element.addEventListener("change", (e) => {
-    let themeValue;
-    themeValue = e.target.value;
-    //dropdown.classList = `dropdown ${themeValue}`
-    bodyColor.classList = themeValue;
-  });
-});
-
-menuButton.addEventListener("click", (event) => {
-  event.stopPropagation();
-  dropdown.style.display = "block";
-  close.addEventListener("click", () => {
-    dropdown.style.display = "none";
-  });
-});
-
-stackRow.addEventListener("mouseover", () => {
-  if (arrowBack.style.display === "block") {
-    arrowBack.style.display = "none";
-    arrowForward.style.display = "none";
-  } else {
-    arrowBack.style.display = "block";
-    arrowForward.style.display = "block";
-  }
-});
-
-window.addEventListener("resize", () => {
-  const screen = window.innerWidth;
-  if (screen >= 1000) {
-    dropdown.style.display = "block";
-  }
-
-  if (screen < 1000) {
-    dropdown.style.display = "";
-  }
-});
-
-document.addEventListener("click", () => {
-  if (themeSelect.style.display === "block") {
-    themeSelect.style.display = "none";
-  }
-});

@@ -128,7 +128,6 @@
     <div tabindex="0" class="tools" data-target="#toolssection">Tools</div>
     <div tabindex="0" class="photos" data-target="#photosection">Photos</div>
     <div tabindex="0" class="post" data-target="#postsection">Post</div>
-    <div tabindex="0" class="blog" data-target="#blogsection">Games</div>
    </div>
    <div class="linecover">
     <div class="moveline"></div>
@@ -136,52 +135,31 @@
    </div>
 
 
-
-
-   <section id="projectsection" class="section">
-    <div class="projectscreen"></div>
-     <!--for clan circle mobile-->
-   </section>
+<section id="projectsection" class="section">
+<div class="projectscreen"></div>
+</section>
 
 <section id="aboutsection" class="section">
-<div class="aboutscreen">
-  <div class="imagecover">
-    <img class="mypicture" src="/img/mypicture.JPG"/>
-  </div>
-<P>I’m a full-stack developer passionate about 
-  solving problems and writing clean, 
-  efficient code. With a diverse background in web and mobile development, 
-  I’ve worked on various projects—ranging from enterprise applications 
-  to innovative startups—that have honed my expertise in technologies like Next.js, React, Express, PostgreSQL, Firebase, and Expo.
-Currently, I’m developing a blockchain-powered social 
-platform where users earn cryptocurrency for their engagement.
- My experience spans front-end, back-end, and mobile app development, 
- along with authentication, database management, and Web3 integrations.
-</P>
-<p>
-I enjoy tackling complex challenges, 
-continuously learning new technologies,
- and turning ideas into functional 
- products. I’m open to collaboration and always eager to contribute to innovative projects. 
- Let’s build something amazing together!
-</P>
-</div>
+<div class="aboutscreen"></div>
 </section>
 
 <section id="toolssection" class="section">
   <div class="toolsscreen"></div>
 </section>
 
+<section id="photosection" class="section">
+  <div class="photoscreen"></div>
+</section>
 
+<div id="popup">
+  <img src="" id="popup-img" alt="full image">
+</div>
 
-
-<section id="blogsection" class="section">Games Section Content</section>
-
-<section id="photosection" class="section">Photos Section Content</section>
-<section id="postsection" class="section">Post Section Content</section>
+<section id="postsection" class="section">
+  <div class="postscreen"></div>
+</section>
    
   </main>
-   
 <div class="contantsdetails">
   <div class="detailsflex">
     <div title="twitter">
@@ -582,11 +560,13 @@ continuously learning new technologies,
 
     <!--boot starp modal is define here-->
     <div class="bootstrapmodal" style="color:blue">modal</div>
-    
+    <script type="module" src="/aboutscreen.js"></script>
+    <script type="module" src="/photoscreen.js"></script>
     <script type="module" src="/toolsscreen.js"></script>
     <script type="module" src="/projectscreen.js"></script>
     <script type="module" src="/modal.js"></script>
     <script type="module" src="/main.js"></script>
+    <script type="module" src="/postscreen.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
       integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"

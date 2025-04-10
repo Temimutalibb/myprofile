@@ -2,6 +2,20 @@ import $ from "jquery";
 import "./style.css";
 import "./styles.scss";
 
+$(document).ready(function () {
+  // Use .on() for better compatibility
+  $(document).on("click", ".thumbnail", function () {
+    const fullImgSrc = $(this).data("full");
+    $("#popup-img").attr("src", fullImgSrc);
+    $("#popup").css("display", "flex");
+  });
+
+  // Click anywhere to close the modal
+  $("#popup").on("click", function () {
+    $(this).fadeOut();
+  });
+});
+
 $(".projects").css({
   "font-weight": "700",
   color: "white",

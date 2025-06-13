@@ -1,6 +1,8 @@
 const modal = document.querySelector(".bootstrapmodal");
 modal.innerHTML = `
 <!--for clancircle-->
+
+
 <div
       class="modal fade"
       id="clancircle"

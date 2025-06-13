@@ -461,6 +461,7 @@ body {
     display: flex;
     flex-direction: column;
     text-align: center;
+    align-items: center;
     justify-content: space-around;
     height: 100vh;
     width: 20%;
@@ -491,10 +492,11 @@ body {
   .dropdown > div:hover {
     background-color: hsl(0, 0%, 98%);
     color: black;
+    width: 100%;
   }
   .dropdown > div img {
     width: 2rem;
-    height: 1rem;
+    height: 2rem;
     align-self: center;
     opacity: 0.5;
     margin-right: 2px;
@@ -503,7 +505,7 @@ body {
   .dropdown > div a {
     display: block;
     font-size:1rem ;
-    
+    width: 2rem;
   }
   
   .intro {
@@ -684,7 +686,7 @@ body {
           );
           background-size: auto 120%;
           background-position: center;
-
+           
           cursor: pointer;
 
           transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
@@ -806,7 +808,7 @@ body {
     }
     .rightbar > div {
       width: 90%;
-      box-shadow: 0px 0px 10px 0px;
+      box-shadow: 0px 0px 3px 0px;
       margin-bottom: 30px;
       text-align: center;
       text-overflow: ellipsis;

@@ -1,3 +1,6 @@
+// This script manages all client-side interactivity for the portfolio website.
+// It handles image popups, section navigation, contact detail toggles,
+// Bootstrap modal triggers, and dynamic card styling on mouse movement.
 import $ from "jquery";
 import "./style.css";
 import "./styles.scss";
@@ -128,8 +131,7 @@ $(".card_card").each(function () {
     });
     $(this).css(
       "backgroundImage",
-      `linear-gradient(45deg, hsl(${hue}, ${saturation}%, 50%), hsl(${
-        (hue + gradientX) % 360
+      `linear-gradient(45deg, hsl(${hue}, ${saturation}%, 50%), hsl(${(hue + gradientX) % 360
       }, ${saturation}%, ${lightness + (gradientY / 100) * 50}%))`
     );
     let borderColor = $(this).css("--border-color");

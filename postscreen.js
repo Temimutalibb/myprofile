@@ -1,3 +1,4 @@
+// This script defines the HTML content for the "Post" section of the mobile view, displaying summaries of blog posts.
 const postScreen = document.querySelector(".postscreen");
 postScreen.innerHTML = `
  <div class="sectionbody">

@@ -1,3 +1,4 @@
+// This script defines the HTML structure for the Bootstrap modals that display project details.
 const modal = document.querySelector(".bootstrapmodal");
 modal.innerHTML = `
 <!--for clancircle-->

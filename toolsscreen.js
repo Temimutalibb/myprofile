@@ -1,3 +1,4 @@
+// This script populates the "Tools" section of the mobile view with a categorized list of skills and technologies.
 const toolsScreen = document.querySelector(".toolsscreen");
 toolsScreen.innerHTML = `
 <div>

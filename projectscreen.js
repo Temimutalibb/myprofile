@@ -1,3 +1,4 @@
+// This script generates the HTML for the "Projects" section in the mobile view, showcasing various projects with details and links.
 const projectScreen = document.querySelector(".projectscreen");
 projectScreen.innerHTML = `
 <div class="sectionbody">

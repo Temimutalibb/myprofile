@@ -1,3 +1,4 @@
+// This script defines the HTML content for the "About" section of the mobile view.
 const aboutScreen = document.querySelector(".aboutscreen");
 aboutScreen.innerHTML = `
  <div class="imagecover">

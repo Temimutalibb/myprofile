@@ -1,3 +1,4 @@
+// This script populates the "Photos" section of the mobile view with image galleries.
 const photoScreen = document.querySelector(".photoscreen");
 photoScreen.innerHTML = `
  <div class="sectionbody">
